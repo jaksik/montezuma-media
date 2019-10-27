@@ -1,0 +1,11 @@
+.card-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.card-title {
+    color: white;
+    position: absolute;
+    top: 50%
+}
