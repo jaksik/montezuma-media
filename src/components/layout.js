@@ -1,39 +1,68 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react"
+import React, { useState } from 'react';
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+import { Link } from "gatsby"
+import pic from "../images/gatsby-icon.png"
+import "./header.css"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+function Layout ({ children }) {
+  const [open, toggle] = useState(false);
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-     
-        <main style={{backgroundColor:`#181510e6`, minHeight:`100vh`}}>{children}</main>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
-    </>
+    <div>
+      <div className={`nav-bar ` + (open ? `nav-open` : ``)}>
+          <div className="nav-items">
+            <Link className="nav-item">
+              Home
+            </Link><br/>
+            <Link to="/gallery&prints" className="nav-item">
+              Gallery & Prints
+            </Link><br/>
+            <Link className="nav-item">
+              Services
+            </Link><br/>
+            <Link className="nav-item">
+              Contact
+            </Link>
+          </div>
+
+          <div className="nav-content">
+            <span onClick={() => toggle(!open)}>
+              <div className={`mobile-icon ` + (open ? `change` : ``)}>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </span>
+
+            <Link to="/" style={{ textDecoration: `none`, width:`100%`}} className="primary-color nav-brand">
+              <img src={pic} style={{width:`50px`, height: `50px`, margin: `20px auto`}}/>
+              <br/>
+              <h1>Aspen Media</h1>
+            </Link>
+
+            <div className="desktop-nav-items">
+              <Link className="nav-item">
+                Home
+              </Link><br/>
+              <Link to="/gallery&prints" className="nav-item">
+                Gallery & Prints
+              </Link><br/>
+              <Link className="nav-item">
+                Services
+              </Link><br/>
+              <Link className="nav-item">
+                Contact
+              </Link>
+          </div>
+            
+          </div> 
+
+      </div>
+
+      <main className={`main ` + (open ? `open` : ``)}>{children}</main>
+
+    </div>
   )
 }
 

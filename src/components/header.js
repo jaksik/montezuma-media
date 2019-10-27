@@ -1,46 +1,51 @@
+import React, { useState } from 'react';
 import { Link } from "gatsby"
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import PropTypes from "prop-types"
-import React from "react"
+import pic from "../images/graphics/cart.png"
 import "./header.css"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      marginBottom: `1.45rem`,
-      textAlign: `center`,
-      zIndex:`5`
-    }}
-    className="header-wrapper"
-  >
-      <div style={{position:`absolute`, top:`30%`, width:`100%`}}>
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              textDecoration: `none`,
-              paddingBottom:`50px`
-            }}
-            className="primary-color"
-          >
-            {siteTitle}
-          </Link>
-        </h1>
+function Header ({ siteTitle }) {
+  const [open, toggle] = useState(false);
 
-        <Link className="nav-item">
-          <p style={{marginTop:`70px`}}>Home</p>
-        </Link>
-        <Link to="/gallery&prints" className="nav-item">
-          <p>Gallery & Prints</p>
-        </Link>
-        <Link className="nav-item">
-          <p>Services</p>
-        </Link>
-        <Link className="nav-item">
-          <p>Contact</p>
-        </Link>
-      </div>
-  </header>
-)
+  return (
+    <div>
+      <header style={{ marginBottom: `1.45rem`, textAlign: `center`, zIndex:`5`}} className="header-wrapper">
+        
+        <span onClick={() => toggle(!open)}>
+          <div className={`mobile-icon ` + (open ? `change` : ``)}>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </span>
+
+          <h1>
+            <Link to="/" style={{ textDecoration: `none`, paddingBottom:`50px`}} className="primary-color">
+              {siteTitle}
+            </Link>
+          </h1>
+          
+          <img src={pic} style={{width:`50px`, margin: `0 auto`}}/><br/>
+
+      </header>
+        <div className="nav-items">
+            <Link className="nav-item">
+              Home
+            </Link>
+            <Link to="/gallery&prints" className="nav-item">
+              Gallery & Prints
+            </Link>
+            <Link className="nav-item">
+              Services
+            </Link>
+            <Link className="nav-item">
+              Contact
+            </Link>
+          </div>
+    </div>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

@@ -1,6 +1,6 @@
 ---
 templateKey: collection
-title: Urban
+title: 14ers
 image: ../../images/capital-lake.jpg
 images:
     - image: ../../images/capital-lake.jpg
