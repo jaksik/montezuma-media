@@ -1,18 +1,21 @@
 .nav-bar {
+    background: rgba(24, 21, 16, 1);
+    height: 180px;
     position: fixed;
     display: flex;
     margin-left: -300px;
     -webkit-transition: margin-left 1s;
     transition: margin-left 1s;
+    z-index: 4;
 }
 
 .nav-items {
-    background: rgba(24, 21, 16, 0.9);
-    text-align: center;
+    background: rgba(24, 21, 16, 1);
     width: 300px;
     height: 100vh;
     -webkit-transition: height 1s;
     transition: height 1s;
+    display: inline-block;
 }
 
 .nav-brand {
@@ -23,7 +26,6 @@
 
 .nav-content {
     display: flex;
-    background: rgba(24, 21, 16, 0.9);
     width: 100vw;
     height: 180px;
     -webkit-transition: width .5s, height 1s;
@@ -31,7 +33,12 @@
 }
 
 .nav-item {
-    color: white;
+    color: #e9dbbd;
+    font-size: 25px;
+    line-height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #e9dbbd;
+    text-decoration: none;
 }
 
 .desktop-nav-items {
@@ -74,12 +81,11 @@
 
 .main {
     background-color: white;
-    position: fixed;
-    margin-top: 180px;
     margin-left: 0px;
     -webkit-transition: margin-left 1s, margin-top 1s;
     transition: margin-left 1s, margin-top 1s;
     z-index: -1;
+    width: 100%;
 }
 
 .open {
@@ -92,6 +98,12 @@
     transition: margin-left 1s;
 }
 
+@media screen and (min-width: 576px) {
+    .nav-bar {
+        /* height: 300px; */
+    }
+}
+
 @media screen and (min-width: 768px) {
     .nav-open {
         margin-left: -300px;
@@ -99,11 +111,12 @@
 
     .nav-bar {
         height: 100vh;
+        align-items: center;
+
     }
 
     .nav-content {
         width: 300px;
-        height: 100vh;
         flex-direction: column;
 
     }
@@ -118,7 +131,9 @@
     }
 
     .main {
-        margin-left: 300px;
+        margin-left: 0px;
+        padding-left: 300px;
         margin-top: 0px;
+        height: 100vh;
     }
 }
