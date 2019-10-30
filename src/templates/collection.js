@@ -8,12 +8,12 @@ export default ({ data }) => {
   console.log("collection: ", data)
   return (
     <Layout>
-      <div className="album-wrapper"> 
+      <div className="row"> 
         {data.markdownRemark.frontmatter.images.map(image => {
             console.log(image);
           return (
-            <div className="gallery-img">
-              <Img fluid={image.image.childImageSharp.fluid} imgStyle={{}} style={{}} />
+            <div className="col">
+              <Img fluid={image.image.childImageSharp.fluid} imgStyle={{}} style={{}} className="gallery-image" />
             </div>
           )
         })}

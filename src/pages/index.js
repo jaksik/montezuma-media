@@ -25,7 +25,7 @@ export const query = graphql`
 query {
   backgroundImage: file(relativePath: { eq: "north-maroon.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 3000) {
+      fluid(maxWidth: 2000, quality: 100) {
         ...GatsbyImageSharpFluid
       }
     }

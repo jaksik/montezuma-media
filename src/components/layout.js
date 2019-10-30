@@ -16,18 +16,18 @@ function Layout ({ children }) {
       <div className={`nav-bar ` + (open ? `nav-open` : ``)}>
         <div className="nav-items">
           <AniLink fade to="/" className="nav-item">
-            <p className="nav-item">Home</p>
+            Home
           </AniLink>
           <AniLink fade to="/gallery&prints" className="nav-item">
-            <p className="nav-item">Gallery & Prints</p>
+            Gallery & Prints
           </AniLink>
           <AniLink fade to="/contact" className="nav-item">
-            <p className="nav-item">Contact</p>
+            Contact
           </AniLink>
         </div>
 
         <div className="nav-content">
-          <span onClick={() => toggle(!open)} style={{position:`absolute`}}>
+          <span onClick={() => toggle(!open)} style={{position:`absolute`, marginLeft:`30px`}}>
             <div className={`mobile-icon ` + (open ? `change` : ``)}>
                   <div class="bar1"></div>
                   <div class="bar2"></div>
@@ -36,18 +36,18 @@ function Layout ({ children }) {
           </span>
 
           <Link to="/" style={{ textDecoration: `none`, width:`100%`}} className="primary-color nav-brand">
-            <h1>Aspen Media</h1>
+            <h1 style={{margin:`0px`}} className="primary-font">Aspen Media</h1>
           </Link>
 
           <div className="desktop-nav-items">
-            <AniLink fade to="/">
-              <p className="nav-item">Home</p>
+            <AniLink fade to="/" className="nav-item">
+              Home
             </AniLink>
             <AniLink fade to="/gallery&prints" className="nav-item">
-              <p>Gallery & Prints</p>
+              Gallery & Prints
             </AniLink>
             <AniLink fade to="/contact" className="nav-item">
-              <p>Contact</p>
+              Contact
             </AniLink>
           </div> 
         </div> 
