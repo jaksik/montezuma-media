@@ -23,7 +23,7 @@ export default IndexPage
 
 export const query = graphql`
 query {
-  backgroundImage: file(relativePath: { eq: "north-maroon.jpg" }) {
+  backgroundImage: file(relativePath: { eq: "capital-lake.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 2000, quality: 100) {
         ...GatsbyImageSharpFluid

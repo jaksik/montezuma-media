@@ -116,6 +116,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    .nav-content {
+        height: auto;
+    }
     .nav-open {
         margin-left: -300px;
     }
@@ -152,5 +155,9 @@
         margin-top: 0px;
         height: 100%;
         min-height: 100vh;
+    }
+
+    .main-container {
+        padding: 50px;
     }
 }

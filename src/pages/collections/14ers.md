@@ -1,12 +1,13 @@
 ---
 templateKey: collection
 title: 14ers
-image: ../../images/capital-lake.jpg
+image: ../../images/14ers/quandary.jpg
 images:
-    - image: ../../images/capital-lake.jpg
-    - image: ../../images/north-maroon.jpg
-    - image: ../../images/trail.jpg
-    - image: ../../images/capital-lake.jpg
-    - image: ../../images/north-maroon.jpg
-    - image: ../../images/trail.jpg
+    - image: ../../images/14ers/north-maroon.jpg
+    - image: ../../images/14ers/blanca.jpg
+    - image: ../../images/14ers/castle.jpg
+    - image: ../../images/14ers/cross.jpg
+    - image: ../../images/14ers/massive.jpg
+    - image: ../../images/14ers/quandary.jpg
+
 ---
