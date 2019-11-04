@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from 'gatsby-image';
 import "./style.css"
-import LightBox from "../components/Lightbox"
+import LightBox from "../components/lightbox"
 export default ({ data }) => {
   console.log("collection: ", data)
   const images = data.markdownRemark.frontmatter.images
