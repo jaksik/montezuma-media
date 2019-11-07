@@ -88,8 +88,7 @@ class Lightbox extends Component {
               &#10095;
               </Button>
               <div onClick={this.closeModal}>
-              <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{maxHeight:`70vh`, width: `100%`}}/>
-
+                <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{maxHeight:`80vh`}} className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? "landscape" : "portrait")} imgStyle={{width:(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `100%` : `auto`)}}/>
               </div>
 
           </LightboxContent>
@@ -137,7 +136,6 @@ const Gallery = styled.div`
 `
 
 const GalleryItem = styled.div`
-  position: relative;
 `
 
 const Button = styled.button`
@@ -176,10 +174,10 @@ const LightboxModal = styled.div`
   visibility: ${props => (props.visible ? 'visible' : 'hidden')};
 `
 const LightboxContent = styled.div`
+  overflow: hidden;
   margin: 15px;
-  max-width: 700px;
+  max-width: 900px;
   width: 100%;
-  max-height: 60vh;
   position: relative
 `
 

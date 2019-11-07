@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Carousel from "../components/carousel"
 import "./index.css"
 
 import Layout from "../components/layout"
@@ -11,10 +12,8 @@ const IndexPage = ({ data }) => (
     <Img fluid={data.backgroundImage.childImageSharp.fluid} style={{ position:`absolute`, width:`100%`, height:`100%`}}/>
     <Layout>
       <SEO title="Home" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
       
+      <Carousel/>
     </Layout>
   </div>
 )

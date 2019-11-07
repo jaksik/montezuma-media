@@ -21,6 +21,9 @@ function Layout ({ children }) {
           <AniLink fade to="/gallery&prints" className="nav-item">
             Gallery & Prints
           </AniLink>
+          <AniLink fade to="/services/" className="nav-item">
+            Services
+          </AniLink>
           <AniLink fade to="/contact" className="nav-item">
             Contact
           </AniLink>
@@ -47,8 +50,8 @@ function Layout ({ children }) {
             <AniLink fade to="/gallery&prints" className="nav-item">
               Stills
             </AniLink>
-            <AniLink fade to="/about" className="nav-item">
-              Motion
+            <AniLink fade to="/services" className="nav-item">
+              Services
             </AniLink>
             <AniLink fade to="/about" className="nav-item">
               About

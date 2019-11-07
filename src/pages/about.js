@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
-  <div style={{position:`fixed`, width:`100vw`, height:`100vh`, overflow:`hidden`}}>
+  <div style={{height:`100vh`, overflow:`hidden`}}>
     <Layout>
       <div style={{color:`white`, padding:`50px`}}>
       <h1>Aspen Media</h1>
