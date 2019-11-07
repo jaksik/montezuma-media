@@ -2,6 +2,8 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Carousel from "../components/carousel"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "./index.css"
 
 import Layout from "../components/layout"

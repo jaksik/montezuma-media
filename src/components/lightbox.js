@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from 'react'
+import { Row, Col } from "reactstrap"
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import "./lightbox.css"
 
 class Lightbox extends Component {
   state = {
@@ -63,35 +65,33 @@ class Lightbox extends Component {
     const { showLightbox, selectedImage } = this.state
     return (
       <>
-        <Gallery>
+        <Row className="no-gutters">
           {images.map((img, i) => {
-              console.log("img", img)
-              return (
-            <GalleryItem key={img.image.childImageSharp.fluid.src}>
-              <a href={img.image.childImageSharp.fluid.src} alt="Car Image" onClick={e => this.handleClick(e, i)}>
-                <StyledImg fluid={img.image.childImageSharp.fluid}/>
-              </a>
-            </GalleryItem>
-          )})}
-        </Gallery>
+            return (
+              <Col xs="6" lg="4" key={img.image.childImageSharp.fluid.src}>
+                <a href={img.image.childImageSharp.fluid.src} alt="" onClick={e => this.handleClick(e, i)}>
+                  <Img fluid={img.image.childImageSharp.fluid} style={{}}/>
+                </a>
+              </Col>
+            )
+          })}
+        </Row>
 
         <LightboxModal visible={showLightbox} onKeyUp={e => this.handleKeyDown(e)}>
 
-            <Button style={{right:`100px`, top:`0`}} onClick={this.closeModal}>Close</Button>
+          <Button style={{right:`100px`, top:`0`}} onClick={this.closeModal}>Close</Button>
 
-          <LightboxContent>
+          <div className="lightbox-content">
 
-            <Button style={{left:`0`}} onClick={this.goBack} disabled={selectedImage === 0}>
-              &#10094;
-              </Button>
-              <Button style={{right:`0`}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>
-              &#10095;
-              </Button>
-              <div onClick={this.closeModal}>
-                <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{maxHeight:`80vh`}} className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? "landscape" : "portrait")} imgStyle={{width:(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `100%` : `auto`)}}/>
-              </div>
+            <Button style={{left:`0`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
+            <Button style={{right:`0`}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>
+              
+            {/* <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{maxHeight:`80vh`}} className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? "landscape" : "portrait")} imgStyle={{width:(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `100%` : `auto`)}}/> */}
+            <div className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? "landscape-img" : "portrait")}>
+            <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{}}/>
 
-          </LightboxContent>
+            </div>
+          </div>
 
         </LightboxModal>
 
@@ -100,43 +100,6 @@ class Lightbox extends Component {
   }
 }
 
-const StyledImg = styled(Img)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  height: 100%; // or whatever
-  & > img {
-    object-fit: cover !important; // or whatever
-    object-position: 0% 0% !important; // or whatever
-  }
-`
-
-const Gallery = styled.div`
-  display: grid;
-  position: relative;
-  z-index: 3;
-  grid-template-columns: 1fr;
-  @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 900px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @media (min-width: 1100px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  grid-gap: 15px;
-  .gatsby-image-outer-wrapper {
-    height: 100%;
-  }
-`
-
-const GalleryItem = styled.div`
-`
 
 const Button = styled.button`
   z-index: 2;
@@ -155,7 +118,7 @@ const Button = styled.button`
   -webkit-user-select: none;
   background: none;
   :hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 `
 
@@ -166,7 +129,6 @@ const LightboxModal = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
@@ -179,13 +141,6 @@ const LightboxContent = styled.div`
   max-width: 900px;
   width: 100%;
   position: relative
-`
-
-const Controls = styled.div`
-`
-
-const LeftRight = styled.div`
- 
 `
 
 Lightbox.propTypes = {

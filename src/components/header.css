@@ -89,11 +89,7 @@
     -webkit-transition: margin-left 1s, margin-top 1s;
     transition: margin-left 1s, margin-top 1s;
     z-index: -1;
-    width: 100%;
     padding-top: 180px;
-   
-    min-height: 100vh;
-    height: 100%;
 }
 
 /* .main-container {

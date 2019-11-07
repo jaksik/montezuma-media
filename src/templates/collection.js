@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import Img from 'gatsby-image';
 import "./style.css"
 import LightBox from "../components/lightbox"
 export default ({ data }) => {
-  console.log("collection: ", data)
   const images = data.markdownRemark.frontmatter.images
   return (
     <Layout>
@@ -28,7 +28,11 @@ export default ({ data }) => {
         </div>
       </div> */}
       <LightBox images={images}/>
-
+      {/* {images.map((image, i) => {
+        return (
+              <Img fluid={image.image.childImageSharp.fluid} style={{}}/>
+        )
+      })} */}
     </Layout>
   )
 }
@@ -41,7 +45,7 @@ export const query = graphql`
         images {
           image {
             childImageSharp {
-              fluid(maxWidth: 2000) {
+              fluid(quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }

@@ -1,0 +1,26 @@
+.image-gallery {
+}
+
+.lightbox-content {
+    position: relative;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 960px;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    margin: 20px auto;
+    width: 100%;
+}
+
+.landscape-img {
+    margin: 0 auto;
+    width: 90%
+}
+
+.portrait {
+    margin: 0 auto;
+    width:55%;
+}

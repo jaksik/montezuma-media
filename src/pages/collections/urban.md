@@ -1,17 +1,13 @@
 ---
 templateKey: collection
 title: Urban
-image: ../../images/urban/chappel.jpg
+image: ../../images/14ers/blanca.jpg
 images:
     - image: ../../images/urban/amsterdam.jpg
-    - image: ../../images/urban/belgium.jpg
-    - image: ../../images/urban/hefen.jpg
-    - image: ../../images/urban/station.jpg
-    - image: ../../images/urban/bulls.jpg
-    - image: ../../images/urban/chappel.jpg
-    - image: ../../images/urban/dubai.jpg
-    - image: ../../images/urban/varanassi.jpg
+    - image: ../../images/urban/heffen.jpg
+    - image: ../../images/urban/creative-two.jpg
     - image: ../../images/urban/bangkok.jpg
-
+    - image: ../../images/urban/dubai.jpg
+    - image: ../../images/urban/deli.jpg
 
 ---
