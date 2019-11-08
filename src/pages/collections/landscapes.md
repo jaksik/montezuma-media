@@ -1,13 +1,13 @@
 ---
 templateKey: collection
-title: Urban
+title: urban-jungle
 image: ../../images/14ers/blanca.jpg
 images:
-    - image: ../../images/urban/amsterdam.jpg
-    - image: ../../images/urban/heffen.jpg
-    - image: ../../images/urban/creative-two.jpg
-    - image: ../../images/urban/bangkok.jpg
-    - image: ../../images/urban/dubai.jpg
-    - image: ../../images/urban/deli.jpg
+    - image: ../../images/urban-jungle/amsterdam.jpg
+    - image: ../../images/urban-jungle/heffen.jpg
+    - image: ../../images/urban-jungle/creative-two.jpg
+    - image: ../../images/urban-jungle/bangkok.jpg
+    - image: ../../images/urban-jungle/dubai.jpg
+    - image: ../../images/urban-jungle/deli.jpg
 
 ---

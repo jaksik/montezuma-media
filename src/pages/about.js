@@ -9,10 +9,9 @@ import SEO from "../components/seo"
 const IndexPage = ({ data }) => (
   <div style={{height:`100vh`, overflow:`hidden`}}>
     <Layout>
-      <div style={{color:`white`, padding:`50px`}}>
-      <h1>Aspen Media</h1>
-      <p>We are Aspen Media Company. We are photographers, videographers, and producers that are passionate about creating breathtaking media assets.</p>
-      </div>
+      <h1>Aspen Adventures</h1>
+      <h4>Founded On Planet Earth</h4>
+      <p></p>
       
     </Layout>
   </div>
