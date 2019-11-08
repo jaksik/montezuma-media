@@ -3,10 +3,8 @@
 
 .lightbox-content {
     position: relative;
-    margin: 15px auto;
     width: 100%;
     max-width: 960px;
-    height: 90vh;
     overflow: hidden;
 }
 
@@ -17,10 +15,70 @@
 
 .landscape-img {
     margin: 0 auto;
-    width: 90%
+    width: 100%
 }
 
 .portrait {
     margin: 0 auto;
-    width:55%;
+    width:100%;
 }
+
+@media screen and (min-width: 576px) {
+    .portrait {
+        width:60%;
+    }
+
+    .landscape-img {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portrait {
+        width:55%;
+    }
+
+    .landscape-img {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 824px) {
+    .portrait {
+        width:50%;
+    }
+
+    .landscape-img {
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .portrait {
+        width:45%;
+    }
+
+    .landscape-img {
+        width: 85%;
+    }
+}
+/* @media screen and (orientation: landscape) {
+    .landscape-img {
+        width: 70%;
+    }
+
+    .portrait {
+        width:35%;
+    }
+    
+} */
+/* 
+@media screen and (orientation: landscape) and (min-width: 812px) {
+    .landscape-img {
+        width: 55%;
+    }
+
+    .portrait {
+        width:30%;
+    }
+} */

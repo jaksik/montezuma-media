@@ -11,7 +11,7 @@ function Layout ({ children }) {
   const [open, toggle] = useState(false);
 
   return (
-    <div className="wrapper">
+    <div className="">
 
       <div className={`nav-bar ` + (open ? `nav-open` : ``)}>
         <div className="nav-items">
