@@ -18,11 +18,14 @@ function Layout ({ children }) {
           <AniLink fade to="/" className="nav-item">
             Home
           </AniLink>
-          <AniLink fade to="/gallery&prints" className="nav-item">
-            Gallery & Prints
+          <AniLink fade to="/galleries/" className="nav-item">
+            Galleries
           </AniLink>
           <AniLink fade to="/services/" className="nav-item">
             Services
+          </AniLink>
+          <AniLink fade to="/about/" className="nav-item">
+            About
           </AniLink>
           <AniLink fade to="/contact" className="nav-item">
             Contact
@@ -47,8 +50,8 @@ function Layout ({ children }) {
             <AniLink fade to="/" className="nav-item">
               Home
             </AniLink>
-            <AniLink fade to="/gallery&prints" className="nav-item">
-              Stills
+            <AniLink fade to="/galleries" className="nav-item">
+              Galleries
             </AniLink>
             <AniLink fade to="/services" className="nav-item">
               Services
@@ -64,7 +67,7 @@ function Layout ({ children }) {
       </div>
 
       <main className={`main ` + (open ? `open` : ``)}>
-        <div className="main-container">{children}</div>
+        <div className="main-container pt-xl-5">{children}</div>
       </main>
 
     </div>

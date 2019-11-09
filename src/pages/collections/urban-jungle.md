@@ -1,13 +1,19 @@
 ---
 templateKey: collection
-title: urban-jungle Jungle
+title: Urban Jungle
 image: ../../images/urban-jungle/bangkok.jpg
 images:
-    - image: ../../images/urban-jungle/amsterdam.jpg
     - image: ../../images/urban-jungle/heffen.jpg
-    - image: ../../images/urban-jungle/creative-two.jpg
     - image: ../../images/urban-jungle/bangkok.jpg
     - image: ../../images/urban-jungle/dubai.jpg
     - image: ../../images/urban-jungle/deli.jpg
+    - image: ../../images/urban-jungle/canal.jpg
+    - image: ../../images/urban-jungle/denmark.jpg
+    - image: ../../images/urban-jungle/slum.jpg
+    - image: ../../images/urban-jungle/angkor.jpg
+    - image: ../../images/urban-jungle/berlin.jpg
+    - image: ../../images/urban-jungle/bridge.jpg
+    - image: ../../images/urban-jungle/lithuania.jpg
+    - image: ../../images/urban-jungle/gadansk.jpg
 
 ---

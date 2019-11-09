@@ -7,7 +7,7 @@ import "./index.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = ({ data }) => (
+const ServicesPage = ({ data }) => (
   <div style={{width:`100%`}}>
     <Layout>
       <h1 className="primary-color text-center">Services</h1>
@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => (
   </div>
 )
 
-export default IndexPage
+export default ServicesPage
 
 export const query = graphql`
 query {

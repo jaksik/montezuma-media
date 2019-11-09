@@ -12,7 +12,7 @@ const ContactPage = ({ data }) => {
     return (
     <Layout>
       <SEO title="Home" />
-        <Img fluid={data.backgroundImage.childImageSharp.fluid}/>
+        <Img fluid={data.backgroundImage.childImageSharp.fluid} style={{maxHeight:`300px`}}/>
       <h2 className="primary-color">Contact Us</h2>
       <form style={{margin:`20 auto`}}>
         <input placeholder=" Name*"/>
