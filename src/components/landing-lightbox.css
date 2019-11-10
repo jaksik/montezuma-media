@@ -24,14 +24,12 @@
     animation-duration: 10000s;
 } */
 
-.landscape-img {
+/* .landscape-img {
     margin: 0 auto;
-    width: 100%
 }
 
 .portrait {
     margin: 0 auto;
-    width:100%;
 }
 
 @media screen and (min-width: 576px) {
@@ -39,11 +37,8 @@
         width:60%;
     }
 
-    .landscape-img {
-        width: 85%;
-    }
-}
-
+} */
+/* 
 @media screen and (min-width: 768px) {
     .portrait {
         width:55%;
@@ -52,8 +47,8 @@
     .landscape-img {
         width: 85%;
     }
-}
-
+} */
+/* 
 @media screen and (min-width: 824px) {
     .portrait {
         width:50%;
@@ -72,7 +67,7 @@
     .landscape-img {
         width: 85%;
     }
-}
+} */
 /* @media screen and (orientation: landscape) {
     .landscape-img {
         width: 70%;
