@@ -15,7 +15,7 @@ const GalleryPage = ({ data }) => {
       <SEO title="Home" />
       <div style={{backgroundColor:`rgba(24, 21, 16, 1)`, height:`100%`}}>
       <h1 style={{textAlign:`center`}} className="primary-color">Gallery and Prints</h1>
-        <Row className="">
+        <Row className="no-gutters p-0">
           {data.allMarkdownRemark.edges.map((edge, index) => {
             const collection = edge.node.frontmatter
             return (

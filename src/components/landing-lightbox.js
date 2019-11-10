@@ -1,18 +1,20 @@
-import React, { Component, Fragment } from 'react'
-import { Row, Col } from "reactstrap"
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import "./lightbox.css"
+import "./landing-lightbox.css"
 
 class Lightbox extends Component {
   state = {
-    showLightbox: false,
+    showLightbox: true,
     selectedImage: 0,
+    background: `black`,
   }
 
   componentDidMount = () => {
     window.addEventListener('keyup', this.handleKeyUp, false)
+    setInterval(this.goForward, 5000);
+    this.setState({ background: `blue`})
   }
 
   componentWillUnmount = () => {
@@ -33,7 +35,11 @@ class Lightbox extends Component {
   }
 
   goForward = () => {
-    this.setState({ selectedImage: this.state.selectedImage + 1 })
+    if (this.state.selectedImage < this.props.images.length - 1) {
+        this.setState({ selectedImage: this.state.selectedImage + 1 })
+    } else {
+        this.setState({ selectedImage: 0 })
+    }
   }
 
   handleKeyUp = e => {
@@ -65,7 +71,7 @@ class Lightbox extends Component {
     const { showLightbox, selectedImage } = this.state
     return (
       <>
-        <Row className="no-gutters">
+        {/* <Row className="no-gutters">
           {images.map((img, i) => {
             return (
               <Col xs="6" lg="4" key={img.image.childImageSharp.fluid.src}>
@@ -75,21 +81,16 @@ class Lightbox extends Component {
               </Col>
             )
           })}
-        </Row>
+        </Row> */}
 
-        <LightboxModal visible={showLightbox} className="row no-gutters align-items-center p-2" onKeyUp={e => this.handleKeyDown(e)}>
+        <LightboxModal className="row no-gutters align-items-center p-0" onKeyUp={e => this.handleKeyDown(e)}>
+        <div className="landing-overlay" ></div>
 
-          <Button style={{right:`100px`, top:`0`}} onClick={this.closeModal}>Close</Button>
 
-          <div className="lightbox-content">
-
-            <Button style={{left:`0`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
+            <Button style={{right:`10%`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
             <Button style={{right:`0`}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>
               
-            {/* <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{maxHeight:`80vh`}} className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? "landscape" : "portrait")} imgStyle={{width:(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `100%` : `auto`)}}/> */}
-                <Img fluid={images[selectedImage].image.childImageSharp.fluid} imgStyle={{margin:0}} className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `landscape-img` : `portrait`)}/>
-
-          </div>
+                <Img fluid={images[selectedImage].childImageSharp.fluid} imgStyle={{margin:0}} style={{position:`initial`, width:`100%`}}/>
 
         </LightboxModal>
 
@@ -103,7 +104,7 @@ const Button = styled.button`
   z-index: 2;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  bottom: 0%;
   width: auto;
   padding: 16px;
   color: white;
@@ -122,7 +123,7 @@ const Button = styled.button`
 
 const LightboxModal = styled.div`
   position: fixed;
-  z-index: 5;
+  z-index: 0;
   top: 0;
   left: 0;
   bottom: 0;
@@ -130,8 +131,6 @@ const LightboxModal = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
-  opacity: ${props => (props.visible ? '1' : '0')};
-  visibility: ${props => (props.visible ? 'visible' : 'hidden')};
 `
 const LightboxContent = styled.div`
   overflow: hidden;

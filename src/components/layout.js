@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import pic from "../images/gatsby-icon.png"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import logo from "../images/logo.png"
 import "./header.css"
@@ -11,7 +10,7 @@ function Layout ({ children }) {
   const [open, toggle] = useState(false);
 
   return (
-    <div className="">
+    <div className="" style={{maxWidth:`2500px`, background:`black`}}>
 
       <div className={`nav-bar ` + (open ? `nav-open` : ``)}>
         <div className="nav-items">
@@ -41,10 +40,10 @@ function Layout ({ children }) {
             </div>
           </span>
 
-          <Link to="/" style={{ textDecoration: `none`, width:`100%`}} className="primary-color nav-brand">
+          <AniLink fade to="/" style={{ textDecoration: `none`, width:`100%`}} className="primary-color nav-brand">
             <img src={logo} style={{width:`160px`, margin:`0 auto`}}/>
             {/* <h1 style={{margin:`0px`}} className="primary-font">Aspen Media</h1> */}
-          </Link>
+          </AniLink>
 
           <div className="desktop-nav-items">
             <AniLink fade to="/" className="nav-item">

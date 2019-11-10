@@ -1,10 +1,28 @@
-.lightbox-content {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    overflow: hidden;
-    max-height: 100vh;
-}
+@keyframes fadeInOut {
+    0% {
+      opacity: 1;
+    }
+  
+    .04% {
+        opacity: 0;
+      }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+/* .landing-overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 2;
+    animation-delay: 0.05s;
+    animation-name: fadeInOut;
+    animation-duration: 10000s;
+} */
 
 .landscape-img {
     margin: 0 auto;
