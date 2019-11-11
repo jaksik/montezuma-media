@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Lightbox from "../components/landing-lightbox"
@@ -19,14 +20,14 @@ const IndexPage = ({ data }) => {
 
   console.log("images: ", data)
   return (
-  <>
-    <Lightbox images={images}/>
-    
+  <div style={{position:`fixed`, width:`100%`, height:`100vh`, overflow:`hidden`}}>
+    {/* <Lightbox  images={images}/> */}
+    <Img style={{position:`fixed`, overflow:`hidden`, width:`100%`}} fluid={data.imageOne.childImageSharp.fluid}/>
     <Layout>
       <SEO title="Home" />
       
     </Layout>
-  </>
+  </div>
 )}
 
 export default IndexPage
