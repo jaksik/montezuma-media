@@ -2,10 +2,11 @@
     background: none;
     position: fixed;
     display: flex;
+    height: 180px;
     margin-left: -300px;
     -webkit-transition: margin-left 1s;
     transition: margin-left 1s;
-    z-index: 4;
+    z-index: 0;
 }
 
 .mobile-nav {
