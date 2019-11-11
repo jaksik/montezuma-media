@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import {Row, Col } from "reactstrap"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import logo from "../images/logo.png"
 import "./header.css"
@@ -32,7 +33,8 @@ function Layout ({ children }) {
         </div>
 
         <div className="nav-content">
-          <span onClick={() => toggle(!open)} style={{position:`absolute`, marginLeft:`30px`}}>
+         <Row className="no-gutters mobile-nav align-items-center">
+         <span onClick={() => toggle(!open)} style={{position:`absolute`, marginLeft:`30px`}}>
             <div className={`mobile-icon ` + (open ? `change` : ``)}>
                   <div class="bar1"></div>
                   <div class="bar2"></div>
@@ -40,10 +42,11 @@ function Layout ({ children }) {
             </div>
           </span>
 
-          <AniLink fade to="/" style={{ textDecoration: `none`, width:`100%`}} className="primary-color nav-brand">
+            <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand">
             <img src={logo} style={{width:`160px`, margin:`0 auto`}}/>
-            {/* <h1 style={{margin:`0px`}} className="primary-font">Aspen Media</h1> */}
+            {/* <h1 style={{margin:`0px`}} className="primary-font">Adventure Photography</h1> */}
           </AniLink>
+         </Row>
 
           <div className="desktop-nav-items">
             <AniLink fade to="/" className="nav-item">
