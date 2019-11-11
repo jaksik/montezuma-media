@@ -20,6 +20,4 @@ images:
     - image: ../../images/urban-jungle/melbourne-harbor.jpg
     - image: ../../images/urban-jungle/cairnes.jpg
     - image: ../../images/urban-jungle/locks.jpg
-
-
 ---
