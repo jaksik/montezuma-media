@@ -83,8 +83,7 @@ class Lightbox extends Component {
           })}
         </Row> */}
 
-        <LightboxModal className="row no-gutters align-items-center p-0" onKeyUp={e => this.handleKeyDown(e)}>
-        <div className="landing-overlay" ></div>
+        <LightboxModal className="align-items-center p-0" onKeyUp={e => this.handleKeyDown(e)}>
 
 
             <Button style={{right:`10%`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>

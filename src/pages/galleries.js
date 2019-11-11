@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { Row, Col } from "reactstrap"
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"

@@ -1,11 +1,10 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { Row, Col } from "reactstrap"
-import Img from "gatsby-image"
-import "./index.css"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Img from "gatsby-image"
+import "./index.css"
 
 const ServicesPage = ({ data }) => (
   <div style={{width:`100%`}}>
@@ -30,7 +29,7 @@ const ServicesPage = ({ data }) => (
       <div className="line-divider"></div>
 
       <Row className="row">
-      <div className="col" style={{width:`40%`}}>
+        <div className="col" style={{width:`40%`}}>
           <Img fluid={data.file.childImageSharp.fluid} style={{}}/>
         </div>
         <div className="primary-color col" style={{width:`60%`}}>
