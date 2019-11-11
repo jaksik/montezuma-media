@@ -14,7 +14,8 @@ const AboutPage = ({ data }) => (
       <Col xs="12" md="6" xl="9">
         <div className="pt-xl-4">
           <h1>About Adven Photography</h1>
-          <h4>Founded By Connor Jaksik</h4>
+          <h4>To Share the World From Unique Perspectives</h4>
+          <h6>Founded By Connor Jaksik</h6>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
         </div>
       </Col>
@@ -31,7 +32,7 @@ export const query = graphql`
 query {
   backgroundImage: file(relativePath: { eq: "connor.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 2000, quality: 100) {
+      fluid(maxWidth: 500, quality: 70) {
         ...GatsbyImageSharpFluid
       }
     }
