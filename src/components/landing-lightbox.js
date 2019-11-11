@@ -83,7 +83,7 @@ class Lightbox extends Component {
           })}
         </Row> */}
 
-        <LightboxModal className="align-items-center p-0" onKeyUp={e => this.handleKeyDown(e)}>
+        <LightboxModal className="align-items-center p-0" style={{position:`fixed`, width:`100%`, height:`100%`}} onKeyUp={e => this.handleKeyDown(e)}>
 
 
             <Button style={{right:`10%`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>

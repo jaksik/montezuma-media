@@ -20,8 +20,8 @@ const IndexPage = ({ data }) => {
 
   console.log("images: ", data)
   return (
-  <div >
-    <Lightbox style={{position:`fixed`, width:`100%`, height:`100vh`}} images={images}/>
+  <div style={{position:`fixed`, width:`100%`, height:`100vh`, overflow:`hidden`}}>
+    <Lightbox images={images}/>
     {/* <Img style={{position:`fixed`, overflow:`hidden`, width:`100%`, minHeight:`100vh`}} fluid={data.imageOne.childImageSharp.fluid}/> */}
     <Layout>
       <SEO title="Home" />
