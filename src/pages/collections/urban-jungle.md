@@ -15,5 +15,11 @@ images:
     - image: ../../images/urban-jungle/bridge.jpg
     - image: ../../images/urban-jungle/lithuania.jpg
     - image: ../../images/urban-jungle/gadansk.jpg
+    - image: ../../images/urban-jungle/melbourne-memorial.jpg
+    - image: ../../images/urban-jungle/yarro-river.jpg
+    - image: ../../images/urban-jungle/melbourne-harbor.jpg
+    - image: ../../images/urban-jungle/cairnes.jpg
+    - image: ../../images/urban-jungle/locks.jpg
+
 
 ---
