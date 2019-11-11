@@ -1,14 +1,12 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
-import Carousel from "../components/carousel"
-import Lightbox from "../components/landing-lightbox"
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import "./index.css"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Lightbox from "../components/landing-lightbox"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css"
+
+
 
 const IndexPage = ({ data }) => {
   const images = [];
