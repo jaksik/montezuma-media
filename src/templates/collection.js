@@ -21,7 +21,7 @@ export const query = graphql`
         images {
           image {
             childImageSharp {
-              fluid(quality: 100) {
+              fluid(quality: 80) {
                 ...GatsbyImageSharpFluid
               }
             }

@@ -19,14 +19,14 @@ const IndexPage = ({ data }) => {
 
   console.log("images: ", data)
   return (
-  <div style={{position:`fixed`, width:`100vw`, height:`100vh`, overflow:`hidden`}}>
+  <>
     <Lightbox images={images}/>
     
     <Layout>
       <SEO title="Home" />
       
     </Layout>
-  </div>
+  </>
 )}
 
 export default IndexPage
@@ -35,35 +35,35 @@ export const query = graphql`
 query {
   imageOne: file(relativePath: { eq: "capital-lake.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 2000, quality: 100) {
+      fluid(maxWidth: 1000, quality: 80) {
         ...GatsbyImageSharpFluid
       }
     }
   }
   imageTwo: file(name: { eq: "ridge" }) {
     childImageSharp {
-      fluid(maxWidth: 2000) {
+      fluid(maxWidth: 1000, quality: 80) {
         ...GatsbyImageSharpFluid
       }
     }
   }
   imageThree: file(name: { eq: "lithuania" }) {
     childImageSharp {
-      fluid(maxWidth: 2000, quality: 100) {
+      fluid(maxWidth: 1000, quality: 80) {
         ...GatsbyImageSharpFluid
       }
     }
   }
   imageFour: file(name: { eq: "deli" }) {
     childImageSharp {
-      fluid(maxWidth: 2000, quality: 100) {
+      fluid(maxWidth: 1000, quality: 80) {
         ...GatsbyImageSharpFluid
       }
     }
   }
   imageFive: file(name: { eq: "cafe" }) {
     childImageSharp {
-      fluid(maxWidth: 2000, quality: 100) {
+      fluid(maxWidth: 1000, quality: 80) {
         ...GatsbyImageSharpFluid
       }
     }

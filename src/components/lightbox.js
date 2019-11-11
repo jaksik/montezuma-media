@@ -78,18 +78,15 @@ class Lightbox extends Component {
         </Row>
 
         <LightboxModal visible={showLightbox} className="row no-gutters align-items-center p-0" onKeyUp={e => this.handleKeyDown(e)}>
-
           <Button style={{right:`10px`, top:`0`}} onClick={this.closeModal}>X</Button>
 
           <div className="lightbox-content">
-
             <Button style={{left:`0`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
             <Button style={{right:`0`}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>
               
-            {/* <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{maxHeight:`80vh`}} className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? "landscape" : "portrait")} imgStyle={{width:(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `100%` : `auto`)}}/> */}
-                <div className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `landscape-img` : `portrait`)}>
-                  <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{width:`100%`}}/>
-                </div>
+            <div className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `landscape-img` : `portrait`)}>
+              <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{width:`100%`}}/>
+            </div>
           </div>
 
         </LightboxModal>
