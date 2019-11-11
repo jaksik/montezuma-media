@@ -12,8 +12,6 @@ images:
     - image: ../../images/life/tokyo.jpg
     - image: ../../images/life/spain.jpg
     - image: ../../images/life/amsterdam.jpg
-    - image: ../../images/life/ant.jpg
     - image: ../../images/life/germany.jpg
-    - image: ../../images/life/varanassi.jpg
     - image: ../../images/life/train.jpg
 ---
