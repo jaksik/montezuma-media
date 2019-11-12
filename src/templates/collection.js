@@ -22,7 +22,7 @@ export const query = graphql`
           image {
             childImageSharp {
               fluid(quality: 80) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }

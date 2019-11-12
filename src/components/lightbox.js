@@ -69,9 +69,9 @@ class Lightbox extends Component {
           {images.map((img, i) => {
             return (
               <Col xs="6" lg="4" key={img.image.childImageSharp.fluid.src}>
-                <a href={img.image.childImageSharp.fluid.src} alt="" onClick={e => this.handleClick(e, i)}>
-                  <Img fluid={img.image.childImageSharp.fluid} style={{}}/>
-                </a>
+                <div href={img.image.childImageSharp.fluid.src} alt="" >
+                  <Img fluid={img.image.childImageSharp.fluid} onClick={e => this.handleClick(e, i)}/>
+                </div>
               </Col>
             )
           })}
@@ -79,18 +79,14 @@ class Lightbox extends Component {
 
         <LightboxModal visible={showLightbox} className="row no-gutters align-items-center p-0" onKeyUp={e => this.handleKeyDown(e)}>
           <Button style={{right:`10px`, top:`0`}} onClick={this.closeModal}>X</Button>
-
           <div className="lightbox-content">
             <Button style={{left:`0`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
-            <Button style={{right:`0`}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>
-              
+            <Button style={{right:`0`}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>  
             <div className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `landscape-img` : `portrait`)}>
               <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{width:`100%`}}/>
             </div>
           </div>
-
         </LightboxModal>
-
       </>
     )
   }

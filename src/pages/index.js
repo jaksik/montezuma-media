@@ -37,35 +37,35 @@ query {
   imageOne: file(name: { eq: "capital-lake" }) {
     childImageSharp {
       fluid(maxWidth: 1000, quality: 80) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
   imageTwo: file(name: { eq: "ridge" }) {
     childImageSharp {
       fluid(maxWidth: 1000, quality: 80) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
   imageThree: file(name: { eq: "lithuania" }) {
     childImageSharp {
       fluid(maxWidth: 1000, quality: 80) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
   imageFour: file(name: { eq: "deli" }) {
     childImageSharp {
       fluid(maxWidth: 1000, quality: 80) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }
   imageFive: file(name: { eq: "cafe" }) {
     childImageSharp {
       fluid(maxWidth: 1000, quality: 80) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_tracedSVG
       }
     }
   }

@@ -32,7 +32,7 @@ const AboutPage = ({ data }) => (
         </div>
       </Col>
       <Col xs="12" sm="8" md="6" xl="5" className="offset-sm-2 offset-md-0 p-md-4">
-        <Img fluid={data.backgroundImage.childImageSharp.fluid}/>
+        <Img fluid={data.backgroundImage.childImageSharp.fluid} alt="Connor Jaksik in Uzupis"/>
       </Col>
     </Row>
   </Layout>
