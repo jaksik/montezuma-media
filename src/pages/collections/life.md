@@ -1,7 +1,7 @@
 ---
 templateKey: collection
 title: Life
-image: ../../images/life/spain.jpg
+image: ../../images/life/taj.jpg
 images:
     - image: ../../images/life/bombay.jpg
     - image: ../../images/life/daharti.jpg

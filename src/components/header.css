@@ -30,7 +30,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
   }
   
   /* Track */
@@ -47,7 +47,7 @@
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: rgb(61, 61, 61); 
   }
 
 .nav-brand {

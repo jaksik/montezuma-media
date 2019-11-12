@@ -1,7 +1,7 @@
 ---
 templateKey: collection
-title: 14ers
-image: ../../images/14ers/quandary.jpg
+title: 14er
+image: ../../images/14ers/north-maroon.jpg
 images:
     - image: ../../images/14ers/north-maroon.jpg
     - image: ../../images/14ers/blanca.jpg
