@@ -60,7 +60,7 @@ class Lightbox extends Component {
   }
 
   render() {
-    const { images } = this.props
+    const { images, name } = this.props
     console.log("Images: ", images)
     const { showLightbox, selectedImage } = this.state
     return (
@@ -69,9 +69,9 @@ class Lightbox extends Component {
           {images.map((img, i) => {
             return (
               <Col xs="6" lg="4" key={img.image.childImageSharp.fluid.src}>
-                <div href={img.image.childImageSharp.fluid.src} alt="" >
-                  <Img fluid={img.image.childImageSharp.fluid} onClick={e => this.handleClick(e, i)}/>
-                </div>
+                <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, i)}>
+                  <Img fluid={img.image.childImageSharp.fluid}/>
+                </a>
               </Col>
             )
           })}

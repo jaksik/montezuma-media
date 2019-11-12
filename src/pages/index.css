@@ -1,11 +1,6 @@
-/* .tl-edges {
-    overflow-x: inherit;
-} */
-
 * {
     color: #e9dbbd;
 }
-
 
 .primary-color {
     color: #e9dbbd;
@@ -15,20 +10,10 @@
     text-align: center;
 }
 
-.row {
-    width: 100%;
-    display: flex;
-    padding: 20px;
-}
-
-.col {
-    padding: 5px;
-}
-
 .line-divider {
     width: 80%;
     border-bottom: 1px solid #e9dbbd;
-    margin: 0 auto
+    margin: 10px auto
 }
 
 input {
@@ -51,4 +36,63 @@ input {
 
 .landscape {
     width: 100%;
+}
+
+.service-container {
+    padding: 25px;
+}
+
+.contact-button {
+    background: none;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    border: 1px solid #e9dbbd;
+    margin: 25px;
+}
+
+.contact-button:hover {
+    background: #e9dbbd;
+    color: black;
+}
+
+.film-strip {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 25px;
+}
+
+.strip-photo {
+    width: 60%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 576px){
+    .strip-photo {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .service-container {
+        margin: 40px;
+    }
+    .film-strip {
+        margin: 40px;
+    }
+
+    .contact-button {
+        margin: 40px;
+    }
+
+    .strip-photo {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .strip-photo {
+        width: 30%;
+    }
 }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import {Row, Col } from "reactstrap"
+import { Row } from "reactstrap"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import logo from "../images/logo.png"
 import "./header.css"

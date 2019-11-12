@@ -8,7 +8,7 @@ export default ({ data }) => {
   const images = data.markdownRemark.frontmatter.images
   return (
     <Layout>
-      <LightBox images={images}/>
+      <LightBox images={images} name={data.markdownRemark.frontmatter.title}/>
     </Layout>
   )
 }
