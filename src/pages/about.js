@@ -10,16 +10,28 @@ import "./index.css"
 
 const AboutPage = ({ data }) => (
   <Layout>
-    <Row className="no-gutters align-items-center" style={{minHeight:`100vh`}}>
-      <Col xs="12" md="6" xl="9">
+    <Row className="no-gutters align-items-center" style={{}}>
+      <Col xs="12" md="6" xl="7">
         <div className="pt-xl-4">
-          <h1>About Adven Photography</h1>
-          <h4>To Share the World From Unique Perspectives</h4>
-          <h6>Founded By Connor Jaksik</h6>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+          <h1 className="text-center">
+            About <br/>
+            Adven Photography
+            </h1>
+          <h5 className="text-center">To Share the World From New Perspectives</h5>
+          <p>
+            <strong>Founded by Connor Jaksik</strong><br/>
+            In 2015 Connor Jaksik set out to leave North America for the first time in his life.
+            He has traveled around the US and to parts of Canada, but now he was on his way to the opposite side of the world
+            with nothing more than a small backpack, a hamy down digital camera, and less than $2000 in the bank.
+            His Only goal was to see how the other parts of the world lived.
+            Using his digital camera, Connor attempted to capture his experience.<br/>
+            <strong>Sharing Moments and Experiences</strong><br/>
+            Since his first journey leaving North America, Connor has traveled to 36 countries and developed a passion for the outdoors.
+            He's climbed over half of the 100 tallest mountains in North America and doesn't plan on stopping.
+            </p>
         </div>
       </Col>
-      <Col xs="12" md="6" xl="3">
+      <Col xs="12" sm="8" md="6" xl="5" className="offset-sm-2 offset-md-0 p-md-4">
         <Img fluid={data.backgroundImage.childImageSharp.fluid}/>
       </Col>
     </Row>
