@@ -9,5 +9,8 @@ images:
     - image: ../../images/14ers/cross.jpg
     - image: ../../images/14ers/massive.jpg
     - image: ../../images/14ers/quandary.jpg
-
+    - image: ../../images/14ers/bells.jpg
+    - image: ../../images/14ers/crestone.jpg
+    - image: ../../images/14ers/laplata.jpg
+    - image: ../../images/14ers/snowmass.jpg
 ---
