@@ -24,8 +24,7 @@ const IndexPage = ({ data }) => {
     <Lightbox images={images}/>
     {/* <Img style={{position:`fixed`, overflow:`hidden`, width:`100%`, minHeight:`100vh`}} fluid={data.imageOne.childImageSharp.fluid}/> */}
     <Layout>
-      <SEO title="Home" />
-      
+      <SEO title="Home" /> 
     </Layout>
   </div>
 )}

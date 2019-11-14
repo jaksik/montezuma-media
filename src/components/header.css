@@ -2,7 +2,7 @@
     background: none;
     position: fixed;
     display: flex;
-    height: 180px;
+    height: 123px;
     margin-left: -300px;
     -webkit-transition: margin-left 1s;
     transition: margin-left 1s;
@@ -124,7 +124,7 @@
     -webkit-transition: margin-left 1s, margin-top 1s;
     transition: margin-left 1s, margin-top 1s;
     z-index: -1;
-    padding-top: 180px;
+    padding-top: 123px;
     width: 100%;
 }
 

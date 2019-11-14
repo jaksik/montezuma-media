@@ -13,4 +13,9 @@ images:
     - image: ../../images/14ers/crestone.jpg
     - image: ../../images/14ers/laplata.jpg
     - image: ../../images/14ers/snowmass.jpg
+    - image: ../../images/14ers/uncompagre.jpg
+    - image: ../../images/14ers/longs.jpg
+    - image: ../../images/14ers/humboldt.jpg
+    - image: ../../images/14ers/evans.jpg
+    - image: ../../images/14ers/el-diente.jpg
 ---

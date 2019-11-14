@@ -20,7 +20,7 @@ const ServicesPage = ({ data }) => {
         </Col>
       <Col xs="12" sm="6" md="7" lg="8"className="primary-color pr-sm-2">
         <strong >Capture Your Next Adventure</strong><br/>
-        <p style={{color:`white`}}> 
+        <p className="page-text"> 
           Are you wanting to capture and share the experience from your next big adventure?
           Connor is a proffesional photographer who lives for adventure and would love to accompany you.
           From below sea level to the highest peaks, on skis or on a belay, Connor can be at your side capturing those once in a lifetime
@@ -28,12 +28,12 @@ const ServicesPage = ({ data }) => {
         </p>
       </Col>
       <Col xs="12" sm="6" md="5" lg="4" className="align-self-center">
-      <ul style={{color:`white`}}>
-          <li style={{color:`white`}}>Day and Overnight Trips</li>
-          <li style={{color:`white`}}>Hourly and Daily Rates</li>
-          <li style={{color:`white`}}>Foreign or Domestic</li>
-          <li style={{color:`white`}}>Marine, Desert, Forest, or Alpine</li>
-          <li style={{color:`white`}}>$99/hour, 8 hour max billing</li>
+      <ul>
+          <li>Day and Overnight Trips</li>
+          <li>Hourly and Daily Rates</li>
+          <li>Foreign or Domestic</li>
+          <li>Marine, Desert, Forest, or Alpine</li>
+          <li>$99/hour, 8 hour max billing</li>
         </ul>
       </Col>
         

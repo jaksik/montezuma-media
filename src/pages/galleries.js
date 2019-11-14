@@ -13,23 +13,21 @@ const GalleryPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div style={{backgroundColor:`rgba(24, 21, 16, 1)`, height:`100%`}}>
       <h1 style={{textAlign:`center`}} className="primary-color">Gallery and Prints</h1>
-        <Row className="no-gutters p-0">
-          {data.allMarkdownRemark.edges.map((edge, index) => {
-            const collection = edge.node.frontmatter
-            return (
-              <Col xs="12" className="p-4">
-                {/* <div className="cover-overlay"></div> */}
-                <AniLink fade to={edge.node.fields.slug}>
-                        <Img fluid={collection.image.childImageSharp.fluid} className="collection-cover"/>
-                        <h3 className="card-title">{collection.title}</h3>
-                </AniLink>
-              </Col>
-            )
-          })}
-        </Row>
-      </div>
+        {data.allMarkdownRemark.edges.map((edge, index) => {
+          const collection = edge.node.frontmatter
+          return (
+            <div style={{padding:`15px`}}>
+              <AniLink fade to={edge.node.fields.slug}>
+              <div style={{position:`relative`}}>
+                <div className="cover-overlay"></div>
+                <Img fluid={collection.image.childImageSharp.fluid} className="collection-cover"/>
+                <h3 className="card-title">{collection.title}</h3>
+              </div>
+            </AniLink>
+            </div>
+          )
+        })}
     </Layout>
   )
 }

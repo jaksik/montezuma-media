@@ -20,6 +20,7 @@ class Lightbox extends Component {
   }
 
   handleClick = (e, index) => {
+    console.log("index", index)
     e.preventDefault()
     this.setState({ showLightbox: !this.state.showLightbox, selectedImage: index })
   }
@@ -63,18 +64,55 @@ class Lightbox extends Component {
     const { images, name } = this.props
     console.log("Images: ", images)
     const { showLightbox, selectedImage } = this.state
+
+    const one = images.slice(0, images.length/3);
+    const two = images.slice(images.length/3, images.length/3 * 2);
+    const three = images.slice(images.length/3 * 2, images.length);
+
+    console.log("one: ", one)
+    console.log("two: ", two)
+    console.log("three: ", three)
+
+
     return (
       <>
         <Row className="no-gutters">
-          {images.map((img, i) => {
-            return (
-              <Col xs="6" lg="4" key={img.image.childImageSharp.fluid.src}>
-                <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, i)}>
-                  <Img fluid={img.image.childImageSharp.fluid}/>
-                </a>
-              </Col>
-            )
-          })}
+          <Col xs="6" lg="4" xl="3">
+            {one.map((img, i) => {
+              return (
+                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, i)} key={img.image.childImageSharp.fluid.src}>
+                    <Img fluid={img.image.childImageSharp.fluid} style={{margin:`10px 5px`}}/>
+                  </a>
+              )
+            })}
+          </Col>
+          <Col xs="6" lg="4" xl="3">
+            {two.map((img, i) => {
+              return (
+                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/3) + i -1)} key={img.image.childImageSharp.fluid.src}>
+                    <Img fluid={img.image.childImageSharp.fluid} style={{margin:`10px 5px`}}/>
+                  </a>
+              )
+            })}
+          </Col>
+          <Col xs="6" lg="4" xl="3">
+            {three.map((img, i) => {
+              return (
+                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/3) * 2 + i -1)} key={img.image.childImageSharp.fluid.src}>
+                    <Img fluid={img.image.childImageSharp.fluid} style={{margin:`10px 5px`}}/>
+                  </a>
+              )
+            })}
+          </Col>
+          <Col xs="6" lg="4" xl="3">
+            {three.map((img, i) => {
+              return (
+                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/3) * 2 + i -1)} key={img.image.childImageSharp.fluid.src}>
+                    <Img fluid={img.image.childImageSharp.fluid} style={{margin:`10px 5px`}}/>
+                  </a>
+              )
+            })}
+          </Col>
         </Row>
 
         <LightboxModal visible={showLightbox} className="row no-gutters align-items-center p-0" onKeyUp={e => this.handleKeyDown(e)}>
@@ -83,7 +121,7 @@ class Lightbox extends Component {
             <Button style={{left:`0`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
             <Button style={{right:`0`}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>  
             <div className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `landscape-img` : `portrait`)}>
-              <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{width:`100%`}}/>
+              <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{margin:`10px auto`}} style={{width:`100%`}}/>
             </div>
           </div>
         </LightboxModal>

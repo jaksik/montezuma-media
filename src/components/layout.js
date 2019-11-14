@@ -41,7 +41,7 @@ function Layout ({ children }) {
           </span>
 
             <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand">
-            <img src={logo} style={{width:`160px`, margin:`0 auto`}}/>
+            <img src={logo} style={{width:`160px`, margin:`20px auto`}}/>
             {/* <h1 style={{margin:`0px`}} className="primary-font">Adventure Photography</h1> */}
           </AniLink>
          </Row>
