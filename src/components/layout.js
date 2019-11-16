@@ -68,6 +68,9 @@ function Layout ({ children }) {
 
       <main className={`main ` + (open ? `open` : ``)}>
         <div className="main-container pt-xl-5">{children}</div>
+        <p style={{margin:`0`, textAlign:`center`}}>© 2019, Adven Photography All Rights Reserved<br/>
+        Website Built by Aspen Apps
+        </p>
       </main>
 
     </div>
