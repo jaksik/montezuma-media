@@ -73,6 +73,7 @@ button {
 .strip-photo {
     width: 60%;
     display: inline-block;
+    margin: 3px;
 }
 
 @media screen and (min-width: 576px){
@@ -86,7 +87,8 @@ button {
         margin: 40px;
     }
     .film-strip {
-        margin: 40px;
+        margin: 0px;
+        margin-top: 10px;
     }
 
     .contact-button {
@@ -100,6 +102,6 @@ button {
 
 @media screen and (min-width: 992px){
     .strip-photo {
-        width: 30%;
+        width: 20%;
     }
 }

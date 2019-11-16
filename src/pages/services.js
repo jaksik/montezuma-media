@@ -12,10 +12,10 @@ const ServicesPage = ({ data }) => {
   return (
   <div style={{width:`100%`}}>
     <Layout>
-      <h1 className="primary-color text-center mb-5">Services</h1>
       <Row className="no-gutters service-container">
+      <h2 className="pb-2">Adventure Photography</h2>
+
         <Col xs="12" sm="6" md="7" lg="8"className="primary-color pr-sm-2">
-          <h2 className="pb-2">Adventure Photography</h2>
           <strong>Capture Your Next Adventure</strong><br/>
           <p className="page-text"> 
             Are you wanting to capture and share the experience from your next big adventure?
@@ -23,15 +23,7 @@ const ServicesPage = ({ data }) => {
             From below sea level to the highest peaks, on skis or on a belay, Connor can be at your side capturing those once in a lifetime
             moments of triumph.
           </p>
-          <div className="film-strip">
-            {data.allFile.edges.map((image, index) => {
-              return (
-                <div className="strip-photo">
-                  <Img sizes={image.node.childImageSharp.sizes}/>
-                  </div>
-              )
-            })}
-          </div>
+         
         </Col>
         <Col xs="12" sm="6" md="5" lg="4" className="align-self-center">
           <ul>
@@ -42,9 +34,31 @@ const ServicesPage = ({ data }) => {
             <li>$99/hour, 8 hour max billing</li>
           </ul>
         </Col>
+        <Col xs="12">
+        <div className="film-strip">
+            {data.allFile.edges.map((image, index) => {
+              return (
+                <div className="strip-photo">
+                  <Img sizes={image.node.childImageSharp.sizes}/>
+                  </div>
+              )
+            })}
+          </div>
+        </Col>
       </Row>
       
       <Row className="no-gutters service-container">
+      <h2 className="pb-2 w-100">Wall and Canvas Prints</h2>
+
+        <Col xs="12" sm="6" md="7" lg="8"className="primary-color pr-sm-2">
+          <strong>Bring Inspiration To Your Space</strong><br/>
+          <p className="page-text"> 
+            All photos by Adven Adventure are available for custom canvas prints.
+            Fill the walls of your business or home with inspirational photos from around the globe.
+            Local to Colorado? Bring the beauty of our state indoors with a local photographer.
+          </p>
+          
+        </Col>
         <Col xs="12" sm="6" md="5" lg="4" className="align-self-center">
           <ul>
             <li>Canvas, poster, and framed prints</li>
@@ -53,15 +67,8 @@ const ServicesPage = ({ data }) => {
             <li>Free delivery in Summit County, CO</li>
           </ul>
         </Col>
-        <Col xs="12" sm="6" md="7" lg="8"className="primary-color pr-sm-2">
-          <h2 className="pb-2">Wall and Canvas Prints</h2>
-          <strong>Bring Inspiration To Your Space</strong><br/>
-          <p className="page-text"> 
-            All photos by Adven Adventure are available for custom canvas prints.
-            Fill the walls of your business or home with inspirational photos from around the globe.
-            Local to Colorado? Bring the beauty of our state indoors with a local photographer.
-          </p>
-          <div className="film-strip">
+        <Col xs="12">
+        <div className="film-strip">
             {data.canvas.edges.map((image, index) => {
               return (
                 <div className="strip-photo">
