@@ -31,7 +31,7 @@ const ServicesPage = ({ data }) => {
             <li>Hourly and Daily Rates</li>
             <li>Foreign or Domestic</li>
             <li>Marine, Desert, Forest, or Alpine</li>
-            <li>$99/hour, 8 hour max billing</li>
+            <li>$99/hour, 8 hour/day max billing</li>
           </ul>
         </Col>
         <Col xs="12">

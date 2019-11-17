@@ -6,32 +6,24 @@ import "./landing-lightbox.css"
 
 class Lightbox extends Component {
   state = {
-    showLightbox: true,
     selectedImage: 0,
-    background: `black`,
   }
 
   componentDidMount = () => {
     window.addEventListener('keyup', this.handleKeyUp, false)
     setInterval(this.goForward, 5000);
-    this.setState({ background: `blue`})
   }
 
   componentWillUnmount = () => {
     window.removeEventListener('keyup', this.handleKeyUp, false)
   }
 
-  handleClick = (e, index) => {
-    e.preventDefault()
-    this.setState({ showLightbox: !this.state.showLightbox, selectedImage: index })
-  }
-
-  closeModal = () => {
-    this.setState({ showLightbox: false })
-  }
-
   goBack = () => {
-    this.setState({ selectedImage: this.state.selectedImage - 1 })
+    if (this.state.selectedImage === 0) {
+      this.setState({ selectedImage: this.props.images.length - 1})
+    } else {
+      this.setState({ selectedImage: this.state.selectedImage - 1 })
+    }
   }
 
   goForward = () => {
@@ -45,54 +37,28 @@ class Lightbox extends Component {
   handleKeyUp = e => {
     e.preventDefault()
     const { keyCode } = e
-    if (this.state.showLightbox) {
       if (keyCode === 37) {
         // Left Arrow Key
-        if (this.state.selectedImage > 0) {
-          this.setState({ selectedImage: this.state.selectedImage - 1 })
-        }
+        this.goForward();
       }
       if (keyCode === 39) {
         // Right Arrow Key
-        if (this.state.selectedImage < this.props.images.length - 1) {
-          this.setState({ selectedImage: this.state.selectedImage + 1 })
-        }
+        this.goForward();
       }
-      if (keyCode === 27) {
-        // Escape key
-        this.setState({ showLightbox: false })
-      }
-    }
   }
 
   render() {
     const { images } = this.props
-    console.log("Images: ", images)
     const { showLightbox, selectedImage } = this.state
+    const image = images[selectedImage].node.childImageSharp.fluid
+
     return (
       <>
-        {/* <Row className="no-gutters">
-          {images.map((img, i) => {
-            return (
-              <Col xs="6" lg="4" key={img.image.childImageSharp.fluid.src}>
-                <a href={img.image.childImageSharp.fluid.src} alt="" onClick={e => this.handleClick(e, i)}>
-                  <Img fluid={img.image.childImageSharp.fluid} style={{}}/>
-                </a>
-              </Col>
-            )
-          })}
-        </Row> */}
-
         <LightboxModal className="align-items-center p-0" style={{position:`fixed`, width:`100%`, height:`100%`}} onKeyUp={e => this.handleKeyDown(e)}>
-
-
-            <Button style={{right:`10%`}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
-            <Button style={{right:`0`}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>
-              
-                <Img fluid={images[selectedImage].childImageSharp.fluid} imgStyle={{margin:0}} style={{position:`initial`, width:`100%`}}/>
-
+          <Button style={{right:`10%`}} onClick={this.goBack}>&#10094;</Button>
+          <Button style={{right:`0`}} onClick={this.goForward}>&#10095;</Button>
+          <Img fluid={image} imgStyle={{margin:0}} style={{position:`initial`, width:`100%`}}/>
         </LightboxModal>
-
       </>
     )
   }
@@ -130,13 +96,6 @@ const LightboxModal = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
-`
-const LightboxContent = styled.div`
-  overflow: hidden;
-  margin: 15px;
-  max-width: 900px;
-  width: 100%;
-  position: relative
 `
 
 Lightbox.propTypes = {

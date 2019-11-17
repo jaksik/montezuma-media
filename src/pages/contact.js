@@ -11,13 +11,14 @@ const ContactPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <Img fluid={data.backgroundImage.childImageSharp.fluid} style={{maxHeight:`300px`}}/>
-      <h2 className="primary-color text-center">Send Us a Message</h2>
+      <h2 className="primary-color text-center mt-5">Send Us a Message</h2>
       <form style={{margin:`20 auto`}}>
-        <input placeholder=" Name*"/>
-        <input placeholder=" Email*"/>
-        <input placeholder=" Phone"/>
-        <input style={{height:`150px`}} placeholder=" Your Message"/>
-        <button>Submit</button>
+        <strong className="mb-3">Tell us about your next adventure, or how you would like to bring inspiration to your space.</strong>
+        <input className="mb-3 mt-3" placeholder=" Name*"/>
+        <input className="mb-3" placeholder=" Email*"/>
+        <input className="mb-3" placeholder=" Phone"/>
+        <input className="mb-3" style={{height:`150px`}} placeholder=" Your Message"/>
+        <button style={{display:`block`, borderRadius:`.3rem`, margin:`0 auto`, width:`150px`}} className="contact-button">Submit</button>
       </form>
     </Layout>
   )

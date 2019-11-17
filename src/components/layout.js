@@ -5,6 +5,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import logo from "../images/logo.png"
 import "./header.css"
 import "./layout.css"
+import "../pages/index.css"
 
 function Layout ({ children }) {
   const [open, toggle] = useState(false);
@@ -68,8 +69,9 @@ function Layout ({ children }) {
 
       <main className={`main ` + (open ? `open` : ``)}>
         <div className="main-container pt-xl-5">{children}</div>
-        <p style={{margin:`0`, textAlign:`center`, fontSize:`15px`}}>© 2019, Adven Photography All Rights Reserved.
-        Website Built by <a href="https://aspenapps.netlify.com">Aspen Apps</a>
+        <p style={{margin:`40px 0px 0px`, textAlign:`center`, fontSize:`15px`}}>
+          © 2019, Adven Photography All Rights Reserved.
+          Website Built by <a href="https://aspenapps.netlify.com">Aspen Apps</a>
         </p>
       </main>
 
