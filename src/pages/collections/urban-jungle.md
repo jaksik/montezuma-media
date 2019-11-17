@@ -14,7 +14,7 @@ images:
     - image: ../../images/urban-jungle/berlin.jpg
     - image: ../../images/urban-jungle/bridge.jpg
     - image: ../../images/urban-jungle/gadansk.jpg
-    - image: ../../images/urban-jungle/gadansk.jpg
+    - image: ../../images/urban-jungle/austin.jpg
     - image: ../../images/urban-jungle/melbourne-memorial.jpg
     - image: ../../images/urban-jungle/yarro-river.jpg
     - image: ../../images/urban-jungle/melbourne-harbor.jpg

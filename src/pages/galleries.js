@@ -13,7 +13,7 @@ const GalleryPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1 style={{textAlign:`center`}} className="primary-color">Gallery and Prints</h1>
+      <h1 style={{textAlign:`center`}} className="primary-color">Galleries</h1>
         {data.allMarkdownRemark.edges.map((edge, index) => {
           const collection = edge.node.frontmatter
           return (

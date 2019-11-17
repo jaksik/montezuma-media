@@ -26,7 +26,7 @@ export const query = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(quality: 80) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }

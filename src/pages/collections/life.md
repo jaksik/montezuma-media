@@ -15,8 +15,8 @@ images:
     - image: ../../images/life/germany.jpg
     - image: ../../images/life/train.jpg
     - image: ../../images/life/poster.jpg
-    - image: ../../images/life/poster.jpg
+    - image: ../../images/landing-cover/deli.jpg
     - image: ../../images/life/camper-van.jpg
-    - image: ../../images/life/cocunut.jpg
-    - image: ../../images/life/cocunut.jpg
+    - image: ../../images/life/bratislava.jpg
+    - image: ../../images/life/varanassi.jpg
 ---

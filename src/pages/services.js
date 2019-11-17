@@ -71,7 +71,7 @@ const ServicesPage = ({ data }) => {
         <div className="film-strip">
             {data.canvas.edges.map((image, index) => {
               return (
-                <div className="strip-photo">
+                <div className="product-photo">
                   <Img sizes={image.node.childImageSharp.sizes}/>
                   </div>
               )

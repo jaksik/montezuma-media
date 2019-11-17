@@ -18,5 +18,5 @@ images:
     - image: ../../images/14ers/longs.jpg
     - image: ../../images/14ers/humboldt.jpg
     - image: ../../images/14ers/evans.jpg
-    - image: ../../images/14ers/el-diente.jpg
+    - image: ../../images/14ers/mountain.jpg
 ---

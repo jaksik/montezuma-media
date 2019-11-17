@@ -68,7 +68,6 @@ input {
 .film-strip {
     overflow: auto;
     white-space: nowrap;
-    margin: 25px;
 }
 
 .strip-photo {
@@ -77,9 +76,21 @@ input {
     margin: 3px;
 }
 
+.product-photo {
+    width: 50%;
+    display: inline-block;
+    margin: 3px;
+}
+
 @media screen and (min-width: 576px){
+    .film-strip {
+        margin: 25px;
+    }
     .strip-photo {
         width: 40%;
+    }
+    .product-photo {
+        width: 35%;
     }
 }
 
@@ -99,10 +110,21 @@ input {
     .strip-photo {
         width: 35%;
     }
+    .product-photo {
+        width: 27%;
+    }
 }
 
 @media screen and (min-width: 992px){
+    .film-strip {
+        margin: 75px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
     .strip-photo {
         width: 20%;
+    }
+    .product-photo {
+        width: 18%;
     }
 }
