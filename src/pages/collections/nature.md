@@ -11,7 +11,7 @@ images:
     - image: ../../images/nature/indonesia.jpg
     - image: ../../images/nature/dillon-marina.jpg
     - image: ../../images/nature/drift.jpg
-    - image: ../../images/nature/cafe.jpg
+    - image: ../../images/nature/drift.jpg
     - image: ../../images/nature/glacier.jpg
     - image: ../../images/nature/lake-dillon.jpg
     - image: ../../images/nature/sunrise.jpg
