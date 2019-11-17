@@ -65,14 +65,15 @@ class Lightbox extends Component {
     console.log("Images: ", images)
     const { showLightbox, selectedImage } = this.state
 
-    const one = images.slice(0, images.length/3);
-    const two = images.slice(images.length/3, images.length/3 * 2);
-    const three = images.slice(images.length/3 * 2, images.length);
+    const one = images.slice(0, images.length/4);
+    const two = images.slice(images.length/4, images.length/4 * 2);
+    const three = images.slice(images.length/4 * 2, images.length/4 * 3);
+    const four = images.slice(images.length/4 * 3, images.length);
 
     console.log("one: ", one)
     console.log("two: ", two)
     console.log("three: ", three)
-
+    console.log("four: ", four)
 
     return (
       <>
@@ -89,7 +90,7 @@ class Lightbox extends Component {
           <Col xs="6" lg="4" xl="3">
             {two.map((img, i) => {
               return (
-                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/3) + i -1)} key={img.image.childImageSharp.fluid.src}>
+                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/4) + i)} key={img.image.childImageSharp.fluid.src}>
                     <Img fluid={img.image.childImageSharp.fluid} style={{margin:`10px 5px`}}/>
                   </a>
               )
@@ -98,16 +99,16 @@ class Lightbox extends Component {
           <Col xs="6" lg="4" xl="3">
             {three.map((img, i) => {
               return (
-                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/3) * 2 + i -1)} key={img.image.childImageSharp.fluid.src}>
+                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/4) * 2 + i)} key={img.image.childImageSharp.fluid.src}>
                     <Img fluid={img.image.childImageSharp.fluid} style={{margin:`10px 5px`}}/>
                   </a>
               )
             })}
           </Col>
           <Col xs="6" lg="4" xl="3">
-            {three.map((img, i) => {
+            {four.map((img, i) => {
               return (
-                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/3) * 2 + i -1)} key={img.image.childImageSharp.fluid.src}>
+                  <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/4) * 3 + i)} key={img.image.childImageSharp.fluid.src}>
                     <Img fluid={img.image.childImageSharp.fluid} style={{margin:`10px 5px`}}/>
                   </a>
               )

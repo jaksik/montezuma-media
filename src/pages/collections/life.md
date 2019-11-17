@@ -14,4 +14,9 @@ images:
     - image: ../../images/life/amsterdam.jpg
     - image: ../../images/life/germany.jpg
     - image: ../../images/life/train.jpg
+    - image: ../../images/life/poster.jpg
+    - image: ../../images/life/poster.jpg
+    - image: ../../images/life/camper-van.jpg
+    - image: ../../images/life/cocunut.jpg
+    - image: ../../images/life/cocunut.jpg
 ---
