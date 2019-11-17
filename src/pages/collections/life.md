@@ -18,5 +18,5 @@ images:
     - image: ../../images/landing-cover/deli.jpg
     - image: ../../images/life/camper-van.jpg
     - image: ../../images/life/bratislava.jpg
-    - image: ../../images/life/varanassi.jpg
+    - image: ../../images/life/air-baloon.jpg
 ---
