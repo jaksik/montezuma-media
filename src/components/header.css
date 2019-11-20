@@ -1,3 +1,7 @@
+.header-wrapper {
+    background: rgba(24, 21, 16, 1);
+}
+
 .nav-bar {
     background: none;
     position: fixed;
@@ -208,5 +212,11 @@
 
     .main-container {
         margin: 0px;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .header-wrapper {
+        width: 100vw;
     }
 }

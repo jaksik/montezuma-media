@@ -20,3 +20,8 @@ images:
     - image: ../../images/life/bratislava.jpg
     - image: ../../images/life/taj.jpg
 ---
+\ ˈlīf
+
+1. The quality that distinguishes a vital and functional being from a dead body.
+2. The sequence of physical and mental experiences that make up the existence of an individual.
+5. The period from birth to death.

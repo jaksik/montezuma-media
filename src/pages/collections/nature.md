@@ -20,3 +20,7 @@ images:
     - image: ../../images/nature/cocunut.jpg
     - image: ../../images/nature/sand.jpg
 ---
+na·​ture | \ ˈnā-chər
+1. The inherent character or basic constitution of a person or thing.
+2. A creative and controlling force in the universe.
+3. A kind or class usually distinguihed by fundamental or essential characteristics.

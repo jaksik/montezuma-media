@@ -60,7 +60,7 @@ const Example = (props) => {
         key={item.src}
       >
         <Img fluid={item.src} alt={item.altText} style={{height:`100vh`}}/>
-        <CarouselCaption captionText={item.caption} className="d-sm-block"/>
+        <CarouselCaption captionText={item.caption} className="d-block"/>
       </CarouselItem>
     );
   });
@@ -74,7 +74,7 @@ const Example = (props) => {
     >
       <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
       {slides}
-      <CarouselControl className="" direction="prev" directionText="Previous" onClickHandler={previous} />
+      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
   );

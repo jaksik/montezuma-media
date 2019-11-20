@@ -20,3 +20,6 @@ images:
     - image: ../../images/14ers/evans.jpg
     - image: ../../images/14ers/mountain.jpg
 ---
+four·​teen·​er | \ fȯr-ˈtē-nər
+1. A verse consisting of 14 syllables or especially of 7 iambic feet.
+2. A mountain that is at least 14,000 feet high.

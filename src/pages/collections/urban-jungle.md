@@ -20,3 +20,7 @@ images:
     - image: ../../images/urban-jungle/melbourne-harbor.jpg
     - image: ../../images/urban-jungle/cairnes.jpg
 ---
+ur·​ban jun·​gle | \ ˈər-bən jəŋ-gəl
+
+1. A metropolis characterized by densely packed residential buildings, businesses and a decaying industrial sector.
+2. City life, especially the unpleasant parts of it.

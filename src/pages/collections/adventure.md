@@ -20,3 +20,8 @@ images:
     - image: ../../images/adventure/ascent.JPG
     - image: ../../images/adventure/pointing.JPG
 ---
+ad·​ven·​ture | \ əd-ˈven-chər
+
+1. An undertaking usually involving danger and unknown risks.
+2. An exciting or remarkable experience.
+3. An enterprise involving financial risk.

@@ -11,7 +11,7 @@ function Layout ({ children }) {
   const [open, toggle] = useState(false);
 
   return (
-    <div style={{width:`100vw`, background:`rgba(24, 21, 16, 1)`}}>
+    <div className="header-wrapper">
       <div style={{maxWidth:`2500px`, margin:`0 auto`}}>
       <div className={`nav-bar ` + (open ? `nav-open` : ``)}>
         <div className="nav-items">
