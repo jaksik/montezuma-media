@@ -67,6 +67,7 @@
     -webkit-transition: width .5s, height 1s;
     transition: width .5s, height 1s;
     align-items: center;
+    margin-left: 0px;
 }
 
 .nav-item {
@@ -159,6 +160,7 @@
     }
     .nav-content {
         height: auto;
+        margin-left: 300px;
     }
     .nav-open {
         margin-left: -300px;
@@ -179,6 +181,10 @@
         width: 300px;
         flex-direction: column;
 
+    }
+
+    .nav-items {
+        display: none;
     }
 
     .desktop-nav-items {

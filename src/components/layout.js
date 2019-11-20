@@ -11,7 +11,8 @@ function Layout ({ children }) {
   const [open, toggle] = useState(false);
 
   return (
-    <div style={{maxWidth:`2500px`}}>
+    <div style={{width:`100vw`, background:`rgba(24, 21, 16, 1)`}}>
+      <div style={{maxWidth:`2500px`, margin:`0 auto`}}>
       <div className={`nav-bar ` + (open ? `nav-open` : ``)}>
         <div className="nav-items">
           <AniLink fade to="/" className="nav-item">
@@ -75,6 +76,7 @@ function Layout ({ children }) {
         </p>
       </main>
 
+      </div>
     </div>
   )
 }

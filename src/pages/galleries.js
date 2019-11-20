@@ -17,12 +17,12 @@ const GalleryPage = ({ data }) => {
         {data.allMarkdownRemark.edges.map((edge, index) => {
           const collection = edge.node.frontmatter
           return (
-            <div style={{padding:`15px`}}>
+            <div style={{padding:`35px`}}>
               <AniLink fade to={edge.node.fields.slug}>
               <div style={{position:`relative`}}>
                 <div className="cover-overlay"></div>
                 <Img fluid={collection.image.childImageSharp.fluid} className="collection-cover"/>
-                <h3 className="card-title">{collection.title}</h3>
+                <h1 className="card-title ml-4">{collection.title}</h1>
               </div>
             </AniLink>
             </div>
