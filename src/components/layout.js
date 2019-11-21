@@ -44,7 +44,7 @@ function Layout ({ children }) {
 
             <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand">
             <img src={logo} style={{width:`160px`, margin:`20px auto`}}/>
-            {/* <h1 style={{margin:`0px`}} className="primary-font">Adventure Photography</h1> */}
+            <h3 style={{margin:`0px`, fontFamily:`monospace`}} className="primary-font">Montezuma Media</h3>
           </AniLink>
          </Row>
 
@@ -71,7 +71,7 @@ function Layout ({ children }) {
       <main className={`main ` + (open ? `open` : ``)}>
         <div className="main-container pt-xl-5">{children}</div>
         <p style={{margin:`40px 0px 0px`, textAlign:`center`, fontSize:`15px`}}>
-          © 2019, Adven Photography All Rights Reserved.
+          © 2019, Montezuma Media All Rights Reserved.
           Website Built by <a href="https://aspenapps.netlify.com">Aspen Apps</a>
         </p>
       </main>

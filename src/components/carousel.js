@@ -16,22 +16,38 @@ const Example = (props) => {
     {
         src: props.images[0].node.childImageSharp.fluid,
         altText: props.images[0].node.name,
+        header: 'To See The World From Other Perspectives',
         caption: 'Delhi, India'
     },
     {
         src: props.images[1].node.childImageSharp.fluid,
         altText: props.images[1].node.name,
+        header: 'Photography and Video Productions by Montezuma Media',
         caption: 'Capital Lake, Colorado'
     },
     {
         src: props.images[2].node.childImageSharp.fluid,
         altText: props.images[2].node.name,
+        header: '',
         caption: 'North Maroon Peak, Colorado'
     },
     {
         src: props.images[3].node.childImageSharp.fluid,
         altText: props.images[3].node.name,
+        header: '',
         caption: 'Vilnius, Lithuania'
+    },
+    {
+      src: props.images[4].node.childImageSharp.fluid,
+      altText: props.images[4].node.name,
+      header: '13,000 Feet',
+      caption: 'North Maroon Peak, Colorado'
+    },
+    {
+      src: props.images[5].node.childImageSharp.fluid,
+      altText: props.images[5].node.name,
+      header: '',
+      caption: 'Vilnius, Lithuania'
     }
   ];
 
@@ -60,7 +76,7 @@ const Example = (props) => {
         key={item.src}
       >
         <Img fluid={item.src} alt={item.altText} style={{height:`100vh`}}/>
-        <CarouselCaption captionText={item.caption} className="d-block"/>
+        <CarouselCaption captionText={item.caption} captionHeader={item.header} className="d-block" style={{color:`blue`}}/>
       </CarouselItem>
     );
   });

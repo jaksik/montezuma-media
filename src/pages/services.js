@@ -12,8 +12,9 @@ const ServicesPage = ({ data }) => {
   return (
   <div style={{width:`100%`}}>
     <Layout>
+      <h1 className="pl-3">Our Services</h1>
       <Row className="no-gutters service-container">
-      <h2 className="pb-2">Adventure Photography</h2>
+        <h4 className="w-100">Adventure Photography</h4><br/>
 
         <Col xs="12" sm="6" md="7" lg="8"className="primary-color pr-sm-2">
           <strong>Capture Your Next Adventure</strong><br/>
@@ -27,10 +28,10 @@ const ServicesPage = ({ data }) => {
         </Col>
         <Col xs="12" sm="6" md="5" lg="4" className="align-self-center">
           <ul>
-            <li>Day and Overnight Trips</li>
-            <li>Hourly and Daily Rates</li>
-            <li>Foreign or Domestic</li>
             <li>Marine, Desert, Forest, or Alpine</li>
+            <li>Day and Overnight Trips</li>
+            <li>Includes Photo/Video Editing</li>
+            <li>Recieve photos in digital format</li>
             <li>$99/hour, 8 hour/day max billing</li>
           </ul>
         </Col>
@@ -48,7 +49,7 @@ const ServicesPage = ({ data }) => {
       </Row>
       
       <Row className="no-gutters service-container">
-      <h2 className="pb-2 w-100">Wall and Canvas Prints</h2>
+      <h4 className="pb-2 w-100">Wall and Canvas Prints</h4>
 
         <Col xs="12" sm="6" md="7" lg="8"className="primary-color pr-sm-2">
           <strong>Bring Inspiration To Your Space</strong><br/>
