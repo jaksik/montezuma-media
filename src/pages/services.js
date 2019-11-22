@@ -54,8 +54,10 @@ const ServicesPage = ({ data }) => {
         <Col xs="12" sm="6" md="7" lg="8"className="primary-color pr-sm-2">
           <strong>Bring Inspiration To Your Space</strong><br/>
           <p className="page-text"> 
-            All photos by Adven Adventure are available for custom canvas prints.
+            All photos and video by Montezuma MediaS are available for custom canvas prints.
             Fill the walls of your business or home with inspirational photos from around the globe.
+            Full resolution images are always used for prints, we use reduced resolution images on this portflio
+            to imrpove site load t
             Local to Colorado? Bring the beauty of our state indoors with a local photographer.
           </p>
           

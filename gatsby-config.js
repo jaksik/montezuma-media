@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Montezuma Media`,
-    description: ``,
-    author: `@gatsbyjs`,
+    description: "An adventure photography and video production agency based in Silverthorne, Colorado.",
+    author: `@jaksik`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
