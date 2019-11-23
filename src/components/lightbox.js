@@ -118,7 +118,9 @@ class Lightbox extends Component {
             <div className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `landscape-img` : `portrait`)}>
               <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{margin:`10px auto`}} style={{width:`100%`}}/>
             </div>
-          <p style={{textAlign:`center`, width:`100%`, paddingTop:`15px`}}>{images[selectedImage].title}</p>
+          {/* <p style={{textAlign:`center`, width:`100%`, paddingTop:`15px`, position:`absolute`, bottom: `0`, backgroundImage: `radial-gradient(black, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))`}}>{images[selectedImage].title}</p> */}
+          <p style={{textAlign:`center`, width:`100%`, paddingTop:`15px`, position:`absolute`, bottom: `0`}}>{images[selectedImage].title}</p>
+
           </div>
         </LightboxModal>
       </>

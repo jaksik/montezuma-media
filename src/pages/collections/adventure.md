@@ -1,24 +1,40 @@
 ---
-templateKey: collection
+templateKey: test
 title: Adventure
 image: ../../images/adventure/sno.jpg
 images:
-    - image: ../../images/adventure/decent.JPG
-    - image: ../../images/adventure/connor.jpg
-    - image: ../../images/adventure/deb.jpg
-    - image: ../../images/adventure/jack.jpg
-    - image: ../../images/adventure/mary.jpg
-    - image: ../../images/adventure/nick.jpg
-    - image: ../../images/adventure/sno.jpg
-    - image: ../../images/adventure/noelle.jpg
-    - image: ../../images/adventure/sun.jpg
-    - image: ../../images/adventure/sunlight.jpg
-    - image: ../../images/adventure/carlos.JPG
-    - image: ../../images/adventure/iceland.jpg
-    - image: ../../images/adventure/smoke.JPG
-    - image: ../../images/adventure/scooter.JPG
-    - image: ../../images/adventure/ascent.JPG
-    - image: ../../images/adventure/pointing.JPG
+  - image: ../../images/adventure/decent.JPG
+    title: Crestone Needle Descent, Colorado
+  - image: ../../images/adventure/connor.jpg
+    title: Green Belt Hiking, Austin, Texas
+  - image: ../../images/adventure/deb.jpg
+    title: Crestone Peak Ascent, Colorado
+  - image: ../../images/adventure/jack.jpg
+    title: Democrat Peak Summit, Colorado
+  - image: ../../images/adventure/mary.jpg
+    title: Quandary Peak Descent, Colorado
+  - image: ../../images/adventure/nick.jpg
+    title: Backcountry Skiing, Loveland Pass, Colorado
+  - image: ../../images/adventure/sno.jpg
+    title: Maroon Peak Ascent, Colorado
+  - image: ../../images/adventure/noelle.jpg
+    title: North Maroon Peak Descent, Colorado
+  - image: ../../images/adventure/sun.jpg
+    title: El Diente Peak Summit, Colorado
+  - image: ../../images/adventure/sunlight.jpg
+    title: Sunlight Peak Summit, Colorado
+  - image: ../../images/adventure/carlos.JPG
+    title: Loveland Pass Snowboarding, Colorado
+  - image: ../../images/adventure/iceland.jpg
+    title: Iceland Peak Bagging, Iceland
+  - image: ../../images/adventure/smoke.JPG
+    title: Wilson Peak Ascent, Colorado
+  - image: ../../images/adventure/scooter.JPG
+    title: Ko Lanta Scootering, Thailand
+  - image: ../../images/adventure/ascent.JPG
+    title: Crestone Needle Ascent, Colorado
+  - image: ../../images/adventure/pointing.JPG
+    title: Budapest Exploring, Hungary
 ---
 ad·​ven·​ture | \ əd-ˈven-chər
 
