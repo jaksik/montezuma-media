@@ -62,18 +62,12 @@ class Lightbox extends Component {
 
   render() {
     const { images, name } = this.props
-    console.log("Images: ", images)
     const { showLightbox, selectedImage } = this.state
-
+    console.log("props", this.props)
     const one = images.slice(0, images.length/4);
     const two = images.slice(images.length/4, images.length/4 * 2);
     const three = images.slice(images.length/4 * 2, images.length/4 * 3);
     const four = images.slice(images.length/4 * 3, images.length);
-
-    console.log("one: ", one)
-    console.log("two: ", two)
-    console.log("three: ", three)
-    console.log("four: ", four)
 
     return (
       <>
@@ -124,6 +118,7 @@ class Lightbox extends Component {
             <div className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `landscape-img` : `portrait`)}>
               <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{margin:`10px auto`}} style={{width:`100%`}}/>
             </div>
+          <p style={{textAlign:`center`, width:`100%`, paddingTop:`15px`}}>{images[selectedImage].title}</p>
           </div>
         </LightboxModal>
       </>

@@ -14,16 +14,16 @@ const Example = (props) => {
 
   const items = [
     {
+      src: props.images[1].node.childImageSharp.fluid,
+      altText: props.images[1].node.name,
+      header: 'Photography and Video Productions by Montezuma Media',
+      caption: 'Capital Lake, Colorado'
+    },
+    {
         src: props.images[0].node.childImageSharp.fluid,
         altText: props.images[0].node.name,
         header: 'To See The World From Other Perspectives',
         caption: 'Delhi, India'
-    },
-    {
-        src: props.images[1].node.childImageSharp.fluid,
-        altText: props.images[1].node.name,
-        header: 'Photography and Video Productions by Montezuma Media',
-        caption: 'Capital Lake, Colorado'
     },
     {
         src: props.images[2].node.childImageSharp.fluid,
@@ -35,7 +35,7 @@ const Example = (props) => {
         src: props.images[3].node.childImageSharp.fluid,
         altText: props.images[3].node.name,
         header: '',
-        caption: 'Vilnius, Lithuania'
+        caption: 'Great Sand Dunes, Colorado'
     },
     {
       src: props.images[4].node.childImageSharp.fluid,
