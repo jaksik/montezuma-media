@@ -87,7 +87,9 @@
 .desktop-nav-items {
     text-align: center;
    display: none;
+   margin-top: 20px;
 }
+
 .mobile-icon {
     display: block;
     z-index: 6;
@@ -154,8 +156,14 @@
     font-family: monospace;
 }
 
-@media screen and (min-width: 768px) {
-   
+.nav-logo {
+    width: 160px;
+}
+
+@media screen and (min-width: 576px) {
+    .nav-logo {
+        width: 300px;
+    }
 }
 
 @media screen and (min-width: 1140px) {

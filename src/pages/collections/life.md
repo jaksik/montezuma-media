@@ -1,5 +1,5 @@
 ---
-templateKey: test
+templateKey: collection
 title: Life
 image: ../../images/life/taj.jpg
 images:

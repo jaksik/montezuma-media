@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from "prop-types"
 import { Row } from "reactstrap"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import logo from "../images/logo.png"
+import logo from "../images/montezuma-2.svg"
 import "./header.css"
 import "./layout.css"
 import "../pages/index.css"
@@ -34,17 +34,16 @@ function Layout ({ children }) {
 
         <div className="nav-content">
          <Row className="no-gutters mobile-nav align-items-center">
-         <span onClick={() => toggle(!open)} style={{position:`absolute`, marginLeft:`30px`}}>
+          <span onClick={() => toggle(!open)} style={{position:`absolute`, marginLeft:`30px`}}>
             <div className={`mobile-icon ` + (open ? `change` : ``)}>
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
             </div>
           </span>
-
-            <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand">
-            <img src={logo} style={{width:`160px`, margin:`20px auto`}}/>
-            <h3 style={{margin:`0px`, fontFamily:`monospace`}} className="primary-font">Montezuma Media</h3>
+          <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand">
+          <img src={logo} style={{margin:`0 auto`}} className="nav-logo"/>
+          <h3 style={{margin:`0 0 10px`, fontFamily:`monospace`}} className="primary-font">Montezuma Media</h3>
           </AniLink>
          </Row>
 

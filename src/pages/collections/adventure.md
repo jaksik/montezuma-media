@@ -1,5 +1,5 @@
 ---
-templateKey: test
+templateKey: collection
 title: Adventure
 image: ../../images/adventure/sno.jpg
 images:

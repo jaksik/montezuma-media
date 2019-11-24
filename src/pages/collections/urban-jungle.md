@@ -1,5 +1,5 @@
 ---
-templateKey: test
+templateKey: collection
 title: Urban Jungle
 image: ../../images/urban-jungle/bangkok.jpg
 images:

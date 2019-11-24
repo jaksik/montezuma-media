@@ -1,5 +1,5 @@
 ---
-templateKey: test
+templateKey: collection
 title: Nature
 image: ../../images/nature/sand.jpg
 images:

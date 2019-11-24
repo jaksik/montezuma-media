@@ -1,5 +1,5 @@
 ---
-templateKey: test
+templateKey: collection
 title: 14er
 image: ../../images/14ers/north-maroon.jpg
 images:

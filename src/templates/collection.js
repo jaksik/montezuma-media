@@ -7,6 +7,7 @@ import "./style.css"
 export default ({ data }) => {
   const collection = data.markdownRemark.frontmatter
   const images = data.markdownRemark.frontmatter.images
+  console.log("data: ", data)
   return (
     <Layout>
       <h2>{collection.title}</h2>
@@ -30,6 +31,7 @@ export const query = graphql`
               }
             }
           }
+          title
         }
       }
     }
