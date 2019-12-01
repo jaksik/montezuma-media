@@ -6,11 +6,10 @@ import Img from "gatsby-image"
 import "./index.css"
 
 const ContactPage = ({ data }) => {
-  console.log("data:", data)
   return (
     <Layout>
       <SEO title="Home" />
-      <Img fluid={data.backgroundImage.childImageSharp.fluid} style={{maxHeight:`300px`}}/>
+      <Img fluid={data.backgroundImage.childImageSharp.fluid} style={{maxHeight:`300px`}} className="ml-2"/>
       <h2 className="primary-color text-center mt-5">Send Us a Message</h2>
 
       <form 

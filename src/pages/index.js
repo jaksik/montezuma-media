@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
       images={data.allFile.edges}
       className="landing-carousel"
     />
-    <div className="row landing-text">
+    <div className="row no-gutters landing-text">
     <h2 style={{alignSelf:`center`, margin:`0 auto`}} className="landing-title">Photography and Video Production from New Perspectives</h2>
 
     </div>

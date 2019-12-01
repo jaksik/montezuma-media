@@ -72,7 +72,7 @@ class Lightbox extends Component {
     return (
       <>
         <Row className="no-gutters">
-          <Col xs="6" lg="4" xl="3">
+          <Col xs="6" xl="3">
             {one.map((img, i) => {
               return (
                   <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, i)} key={img.image.childImageSharp.fluid.src}>
@@ -81,7 +81,7 @@ class Lightbox extends Component {
               )
             })}
           </Col>
-          <Col xs="6" lg="4" xl="3">
+          <Col xs="6" xl="3">
             {two.map((img, i) => {
               return (
                   <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/4) + i)} key={img.image.childImageSharp.fluid.src}>
@@ -90,7 +90,7 @@ class Lightbox extends Component {
               )
             })}
           </Col>
-          <Col xs="6" lg="4" xl="3">
+          <Col xs="6" xl="3">
             {three.map((img, i) => {
               return (
                   <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/4) * 2 + i)} key={img.image.childImageSharp.fluid.src}>
@@ -99,7 +99,7 @@ class Lightbox extends Component {
               )
             })}
           </Col>
-          <Col xs="6" lg="4" xl="3">
+          <Col xs="6" xl="3">
             {four.map((img, i) => {
               return (
                   <a href={img.image.childImageSharp.fluid.src} alt={name + `image`} onClick={e => this.handleClick(e, Math.ceil(images.length/4) * 3 + i)} key={img.image.childImageSharp.fluid.src}>

@@ -79,7 +79,7 @@ function Layout ({ children }) {
 
       <main className={`main ` + (open ? `open` : ``)}>
         <div className="main-container pt-xl-5">{children}</div>
-        <p style={{margin:`40px 0px 0px`, textAlign:`center`, fontSize:`15px`}}>
+        <p style={{margin:`40px 40px 0px`, textAlign:`center`, fontSize:`15px`}}>
           © 2019, Montezuma Media All Rights Reserved.
           Website Built by <a href="https://aspenapps.netlify.com">Aspen Apps</a>
         </p>

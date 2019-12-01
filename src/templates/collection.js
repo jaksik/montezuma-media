@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Layout from "../components/layout"
 import LightBox from "../components/lightbox"
 import "./style.css"
@@ -10,6 +11,9 @@ export default ({ data }) => {
   console.log("data: ", data)
   return (
     <Layout>
+      <AniLink fade to="/photo/" className="mt-3 mb-3">
+        <p>Back to Albums</p>
+      </AniLink>
       <h2>{collection.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
       <LightBox images={images} name={collection.title}/>

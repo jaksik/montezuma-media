@@ -35,10 +35,9 @@ images:
     title: Bratislava, Slovakia
   - image: ../../images/life/taj.jpg
     title: Taj Mahal, Agra, India
----     
-itle: North Maroon Peak, Colorado
-\ ˈlīf
+---
 
+li·fe​ | \ ˈlīf
 1. The quality that distinguishes a vital and functional being from a dead body.
 2. The sequence of physical and mental experiences that make up the existence of an individual.
 5. The period from birth to death.

@@ -119,9 +119,31 @@ input {
 
 .carousel-caption {
     color:#e9dbbd!important;
+    bottom: 70px!important;
+}
+
+.carousel-indicators {
+    bottom: 50px!important;
+}
+
+@media screen and (max-width: 450px){
+    .carousel-control-next {
+        display: none!important;
+    }
+    .carousel-control-prev {
+        display: none!important;
+    }
 }
 
 @media screen and (min-width: 576px){
+    .carousel-caption {
+        bottom: 20px!important;
+    }
+
+    .carousel-indicators {
+        bottom: 0px!important;
+    }
+
     .film-strip {
         margin: 25px;
     }
@@ -169,5 +191,20 @@ input {
     .landing-title {
         padding-left: 300px;
         max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .landing-title {
+        font-size: 3rem;
+        max-width: 1000px;
+    }
+
+    .carousel-control-next {
+        display: none!important;
+    }
+    
+    .carousel-control-prev {
+        display: none!important;
     }
 }

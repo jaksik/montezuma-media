@@ -10,8 +10,8 @@ const VideoPage = ({ data }) => {
   return (
     <Layout>
         <SEO title="Home" /> 
-        <h1 className="text-center">Video Production Portfolio</h1>
-        <h2 className="text-center mt-5">Check back soon for our videos!</h2>
+        <h2 className="text-center">Video Production Portfolio</h2>
+        <h3 className="text-center mt-5">Check back soon for our videos!</h3>
     </Layout>
 )}
 
