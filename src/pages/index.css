@@ -2,6 +2,18 @@
     color: #e9dbbd;
 }
 
+.landing-text {
+    text-align: center;
+    position: fixed;
+    margin: 0 auto;
+    height: 80vh;
+    width: 100vw;
+}
+
+.landing-title {
+    max-width: 550px;
+}
+
 .primary-color {
     color: #e9dbbd;
 }
@@ -150,5 +162,12 @@ input {
     }
     .product-photo {
         width: 18%;
+    }
+}
+
+@media screen and (min-width: 1140px){
+    .landing-title {
+        padding-left: 300px;
+        max-width: 800px;
     }
 }

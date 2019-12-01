@@ -7,6 +7,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import "./carousel.css"
 
 const Example = (props) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -76,7 +77,7 @@ const Example = (props) => {
         key={item.src}
       >
         <Img fluid={item.src} alt={item.altText} style={{height:`100vh`}}/>
-        <CarouselCaption captionText={item.caption} captionHeader={item.header} className="d-block" style={{color:`blue`}}/>
+        <CarouselCaption captionText={item.caption} className="d-block" style={{color:`blue`}}/>
       </CarouselItem>
     );
   });

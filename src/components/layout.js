@@ -18,9 +18,12 @@ function Layout ({ children }) {
           <AniLink fade to="/" className="nav-item">
             Home
           </AniLink>
-          <AniLink fade to="/galleries/" className="nav-item">
-            Galleries
+          <AniLink fade to="/photo/" className="nav-item">
+            Photo
           </AniLink>
+          <AniLink fade to="/video/" className="nav-item">
+              Video
+            </AniLink>
           <AniLink fade to="/services/" className="nav-item">
             Services
           </AniLink>
@@ -41,18 +44,25 @@ function Layout ({ children }) {
               <div class="bar3"></div>
             </div>
           </span>
-          <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand">
-          <img src={logo} style={{margin:`0 auto`}} className="nav-logo"/>
-          <h3 style={{margin:`0 0 10px`, fontFamily:`monospace`}} className="primary-font">Montezuma Media</h3>
+          <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand mobile-brand">
+            <img src={logo} style={{margin:`0 auto`}} className="nav-logo"/>
+            <h3 style={{margin:`0 0 10px`, fontFamily:`monospace`}} className="primary-font site-title">Montezuma Media</h3>
           </AniLink>
          </Row>
 
           <div className="desktop-nav-items">
+            <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand">
+              <img src={logo} style={{margin:`0 auto`}} className="nav-logo"/>
+              <h3 style={{margin:`0 0 10px`, fontFamily:`monospace`}} className="primary-font site-title">Montezuma Media</h3>
+            </AniLink>
             <AniLink fade to="/" className="nav-item">
               Home
             </AniLink>
-            <AniLink fade to="/galleries" className="nav-item">
-              Galleries
+            <AniLink fade to="/photo/" className="nav-item">
+              Photo
+            </AniLink>
+            <AniLink fade to="/video/" className="nav-item">
+              Video
             </AniLink>
             <AniLink fade to="/services" className="nav-item">
               Services

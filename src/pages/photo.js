@@ -13,11 +13,13 @@ const GalleryPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1 style={{textAlign:`center`}} className="primary-color">Galleries</h1>
+      <h1 style={{textAlign:`center`}} className="primary-color">Photography Portfolio</h1>
+        <Row className="no-gutters">
         {data.allMarkdownRemark.edges.map((edge, index) => {
           const collection = edge.node.frontmatter
           return (
-            <div className="gallery-card-wrapper">
+            <Col xs="12" md="6">
+              <div className="gallery-card-wrapper">
               <AniLink fade to={edge.node.fields.slug}>
               <div style={{position:`relative`}}>
                 <div className="cover-overlay"></div>
@@ -26,8 +28,10 @@ const GalleryPage = ({ data }) => {
               </div>
             </AniLink>
             </div>
+            </Col>
           )
         })}
+        </Row>
     </Layout>
   )
 }

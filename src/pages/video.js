@@ -2,30 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Carousel from "../components/carousel"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css"
 
-const IndexPage = ({ data }) => {
-  console.log("data: ", data)
+const VideoPage = ({ data }) => {
 
   return (
-  <div style={{position:`fixed`, width:`100%`, height:`100vh`, overflow:`hidden`, background:`black`}}>
-    <Carousel 
-      images={data.allFile.edges}
-      className="landing-carousel"
-    />
-    <div className="row landing-text">
-    <h2 style={{alignSelf:`center`, margin:`0 auto`}} className="landing-title">Photography and Video Production from New Perspectives</h2>
-
-    </div>
     <Layout>
-      <SEO title="Home" /> 
+        <SEO title="Home" /> 
+        <h1 className="text-center">Video Production Portfolio</h1>
+        <h2 className="text-center mt-5">Check back soon for our videos!</h2>
     </Layout>
-  </div>
 )}
 
-export default IndexPage
+export default VideoPage
 
 export const query = graphql`
   query {

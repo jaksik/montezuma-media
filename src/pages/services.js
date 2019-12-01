@@ -12,7 +12,7 @@ const ServicesPage = ({ data }) => {
   return (
   <div style={{width:`100%`}}>
     <Layout>
-      <h1 className="pl-3">Our Services</h1>
+      <h2 className="pl-3">Our Services</h2>
       <Row className="no-gutters service-container">
         <h4 className="w-100">Adventure Follows</h4><br/>
 

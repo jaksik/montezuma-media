@@ -8,10 +8,10 @@ import "./index.css"
 
 const AboutPage = ({ data }) => (
   <Layout>
-    <Row className="no-gutters align-items-center">
-      <Col xs="12" md="6" xl="7">
+    <Row className="no-gutters align-items-center pl-lg-5 pl-xl-5" style={{minHeight:`100vh`}}>
+      <Col xs="12" md="7" xl="8">
         <div className="pt-xl-4">
-          <h1>Montezuma Media</h1>
+          <h2>Montezuma Media</h2>
           <h5>To Share the World From New Perspectives</h5><br/>
           <p style={{color:`#b8b8b8`, marginRight:`15px`}}>
             <strong>Founded by Connor Jaksik</strong><br/>
@@ -29,7 +29,7 @@ const AboutPage = ({ data }) => (
           </p>
         </div>
       </Col>
-      <Col xs="12" sm="8" md="6" xl="4" className="offset-sm-2 offset-md-0 p-md-4">
+      <Col xs="12" sm="8" md="5" xl="4" className="offset-sm-2 offset-md-0 p-md-4">
         <Img fluid={data.backgroundImage.childImageSharp.fluid} alt="Connor Jaksik in Uzupis"/>
       </Col>
     </Row>

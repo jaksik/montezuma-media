@@ -6,7 +6,6 @@
     background: none;
     position: fixed;
     display: flex;
-    height: 123px;
     margin-left: -300px;
     -webkit-transition: margin-left 1s;
     transition: margin-left 1s;
@@ -133,6 +132,8 @@
     z-index: -1;
     padding-top: 175px;
     width: 100%;
+    padding-top: 250px;
+
 }
 
 .main-container {
@@ -167,12 +168,16 @@
 }
 
 @media screen and (min-width: 1140px) {
+    .mobile-brand {
+        display: none;
+    }
+   
     .mobile-nav {
         background: none;
     }
     .nav-content {
         height: auto;
-        margin-left: 300px;
+        margin-left: 0px;
     }
     .nav-open {
         margin-left: -300px;
@@ -182,7 +187,8 @@
         height: 100vh;
         align-items: center;
         background: rgba(24, 21, 16, .5);
-
+        margin-left: 0px;
+        overflow-y: scroll;
     }
 
     .nav-item {
@@ -192,7 +198,6 @@
     .nav-content {
         width: 300px;
         flex-direction: column;
-
     }
 
     .nav-items {
@@ -224,7 +229,35 @@
 }
 
 @media screen and (min-width: 2500px) {
+    h1 {
+        font-size: 3rem;
+    }
     .header-wrapper {
         width: 100vw;
+    }
+
+    .main {
+        padding-left: 450px;
+    }
+
+    .nav-content {
+        width: 450px
+    }
+
+    .nav-logo {
+        width: 450px;
+    }
+
+    .nav-item {
+        font-size: 50px;
+    }
+
+    .site-title {
+        margin: 0px 0px 75px;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 27px;
     }
 }
