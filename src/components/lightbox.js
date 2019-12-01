@@ -111,10 +111,10 @@ class Lightbox extends Component {
         </Row>
 
         <LightboxModal visible={showLightbox} className="row no-gutters align-items-center p-0" onKeyUp={e => this.handleKeyDown(e)}>
-          <Button style={{right:`10px`, top:`0`}} onClick={this.closeModal}>X</Button>
+          <Close className="close-button" onClick={this.closeModal}>X</Close>
           <div className="lightbox-content">
-            <Button style={{left:`0`, opacity:(selectedImage === 0 ? `0%` : `100%`)}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
-            <Button style={{right:`0`, opacity:(selectedImage === images.length - 1 ? `0` : `100`)}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>  
+            <Button style={{left:`10px`, opacity:(selectedImage === 0 ? `0%` : `100%`)}} onClick={this.goBack} disabled={selectedImage === 0}>&#10094;</Button>
+            <Button style={{right:`10px`, opacity:(selectedImage === images.length - 1 ? `0` : `100`)}} onClick={this.goForward} disabled={selectedImage === images.length - 1}>&#10095;</Button>  
             <div className={(images[selectedImage].image.childImageSharp.fluid.aspectRatio > 1 ? `landscape-img` : `portrait`)}>
               <Img fluid={images[selectedImage].image.childImageSharp.fluid} style={{margin:`10px auto`}} style={{width:`100%`}}/>
             </div>
@@ -138,7 +138,25 @@ const Button = styled.button`
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  user-select: none;
+  -webkit-user-select: none;
+  background: none;
+  :hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+`
+const Close = styled.button`
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   border: none;
