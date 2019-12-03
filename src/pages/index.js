@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
       className="landing-carousel"
     />
     <div className="row no-gutters landing-text">
-    <h2 style={{alignSelf:`center`, margin:`0 auto`}} className="landing-title">Photography and Video Production from New Perspectives</h2>
+    <h2 style={{alignSelf:`center`, margin:`0 auto`}} className="landing-title">Photography And Video Production from A New Perspective</h2>
 
     </div>
     <Layout>

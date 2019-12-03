@@ -171,6 +171,14 @@ input {
     .product-photo {
         width: 27%;
     }
+
+    .left-item {
+        padding-right: 10px!important;
+    }
+
+    .right-item {
+        padding-left: 10px!important;
+    }
 }
 
 @media screen and (min-width: 992px){

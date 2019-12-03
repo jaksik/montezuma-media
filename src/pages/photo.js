@@ -18,7 +18,7 @@ const GalleryPage = ({ data }) => {
         {data.allMarkdownRemark.edges.map((edge, index) => {
           const collection = edge.node.frontmatter
           return (
-            <Col xs="12" md="6" style={{padding: (index % 2 ? `0px 0px 0px 10px`: `0px 10px 0px 0px`)}}>
+            <Col xs="12" md="6" className={(index % 2 ? `right-item`: `left-item`)}>
               <div className="gallery-card-wrapper">
               <AniLink fade to={edge.node.fields.slug}>
               <div style={{position:`relative`}}>

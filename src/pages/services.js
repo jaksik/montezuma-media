@@ -14,7 +14,7 @@ const ServicesPage = ({ data }) => {
     <Layout>
       <h2 className="pl-3">Our Services</h2>
       <Row className="no-gutters service-container">
-        <h4 className="w-100">Adventure Follows</h4><br/>
+        <h4 className="w-100">Adventure Photo Shoots</h4><br/>
 
         <Col xs="12" md="7" lg="8"className="primary-color pr-sm-2">
           <strong>Capture Your Next Adventure</strong><br/>
@@ -28,7 +28,7 @@ const ServicesPage = ({ data }) => {
         <Col xs="12" md="5" lg="4" className="align-self-center">
           <ul>
             <li>Includes Photo/Video Editing</li>
-            <li>Recieve photos in digital format</li>
+            <li>Recieve photos in digital formats</li>
             <li>$99/hour, 8 hour/day max billing</li>
           </ul>
         </Col>
@@ -46,14 +46,14 @@ const ServicesPage = ({ data }) => {
       </Row>
       
       <Row className="no-gutters service-container">
-      <h4 className="pb-2 w-100">Wall and Canvas Prints</h4>
+      <h4 className="pb-2 w-100">Canvas Prints for Purchase</h4>
 
         <Col xs="12" md="7" lg="8"className="primary-color pr-sm-2">
           <strong>Bring Inspiration To Your Space</strong><br/>
           <p className="page-text"> 
-            All photos and videos on this website are available for purchase in printed and digital formats. All prints include a digital copy.
-            Fill the walls of your business or home with inspirational photos from around the globe or right in your backyard (if your backyard is Colorado).
-            The images on this website have been reduced in size to improve site performance, but purchases include full size images. Contact us for quotes.
+            Most photos on this website are available for purchase in printed and digital formats. All prints include a digital copy.
+            Fill the walls of your business or home with inspirational photos from around the globe or right from your backyard (if your backyard is Colorado).
+            The size of the images on this website have been reduced to improve site performance. Purchases include the full resolution image. Contact us for quotes.
           </p>
           
         </Col>
@@ -61,7 +61,7 @@ const ServicesPage = ({ data }) => {
           <ul>
             <li>Canvas, poster, framed prints, and digital</li>
             <li>Wide range of sizes available</li>
-            <li>Retail and bulk order discounts</li>
+            <li>Local Colorado photography</li>
           </ul>
         </Col>
         <Col xs="12">
@@ -70,7 +70,7 @@ const ServicesPage = ({ data }) => {
               return (
                 <div className="product-photo">
                   <Img sizes={image.node.childImageSharp.sizes}/>
-                  </div>
+                </div>
               )
             })}
           </div>
