@@ -7,9 +7,9 @@ images:
     title: Back Bay, Mumbai, India
   - image: ../../images/life/daharti.jpg
     title: Daharvi District, Mumbai, India
-  - image: ../../images/life/hamburg.jpg
+  - image: ../../images/life/ant.jpg
     title: Main Train Station, Hamburg, Germany
-  - image: ../../images/life/monks.jpg
+  - image: ../../images/life/varanassi.jpg
     title: Laos
   - image: ../../images/life/mumbai.jpg
     title: Mumbai, India
@@ -21,15 +21,15 @@ images:
     title: Running of the Bulls, Pamplona, Spain 
   - image: ../../images/life/amsterdam.jpg
     title: Amsterdam, Netherlands
-  - image: ../../images/life/germany.jpg
+  - image: ../../images/life/grant.jpg
     title: Straubing, Germany
   - image: ../../images/life/train.jpg
     title: Warsaw, Poland
-  - image: ../../images/life/poster.jpg
+  - image: ../../images/life/brussels.jpg
     title: Berlin Wall, Berlin, Germany
   - image: ../../images/landing-cover/deli.jpg
     title: Old Delhi, Delhi, India
-  - image: ../../images/life/camper-van.jpg
+  - image: ../../images/life/people.jpg
     title: Queensland, Australia
   - image: ../../images/life/bratislava.jpg
     title: Bratislava, Slovakia

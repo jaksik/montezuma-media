@@ -11,8 +11,6 @@ images:
     title: Dubai Marina, Dubai, UAE
   - image: ../../images/urban-jungle/canal.jpg
     title: Amsterdam, Netherlands
-  - image: ../../images/urban-jungle/canal.jpg
-    title: North Maroon Peak, Colorado
   - image: ../../images/urban-jungle/denmark.jpg
     title: Copenhagen, Denmark
   - image: ../../images/urban-jungle/slum.jpg
@@ -21,19 +19,21 @@ images:
     title: Angkor Wat, Cambodia
   - image: ../../images/urban-jungle/berlin.jpg
     title: Berlin, Germany
-  - image: ../../images/urban-jungle/bridge.jpg
-    title: Tower Bridge, London, United Kingdom
   - image: ../../images/urban-jungle/gadansk.jpg
     title: Gadansk, Poland
-  - image: ../../images/urban-jungle/austin.jpg
-    title: LBJ Lake, Austin, Texas
-  - image: ../../images/urban-jungle/melbourne-memorial.jpg
+  - image: ../../images/urban-jungle/scraper.jpg
     title: WWII Memorial, Melbourne, Australia
-  - image: ../../images/urban-jungle/yarro-river.jpg
+  - image: ../../images/urban-jungle/canabis.jpg
     title: Yarro River, Melbourne, Australia
   - image: ../../images/urban-jungle/melbourne-harbor.jpg
     title: Melbourne Harbor, Melbourne, Australia
-  - image: ../../images/urban-jungle/cairnes.jpg
+  - image: ../../images/urban-jungle/antwerp.jpg
+    title: Cairnes, Australia
+  - image: ../../images/urban-jungle/hamburg.jpg
+    title: Cairnes, Australia
+  - image: ../../images/urban-jungle/dubai-beach.jpg
+    title: Cairnes, Australia
+  - image: ../../images/urban-jungle/ping-pong.jpg
     title: Cairnes, Australia
 ---    
 
