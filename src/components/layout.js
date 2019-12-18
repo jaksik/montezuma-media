@@ -19,7 +19,7 @@ function Layout ({ children }) {
             Home
           </AniLink>
           <AniLink fade to="/photography/" className="nav-item">
-            Photography
+            Photo
           </AniLink>
           <AniLink fade to="/video/" className="nav-item">
               Video
@@ -59,7 +59,7 @@ function Layout ({ children }) {
               Home
             </AniLink>
             <AniLink fade to="/photography/" className="nav-item">
-              Photography
+              Photo
             </AniLink>
             <AniLink fade to="/video/" className="nav-item">
               Video
