@@ -43,4 +43,4 @@ pres·​ent mom·ent | \ ˈpre-zᵊnt mō-məntˈ \
 2. Here and now.
 3. Where time ceases to exist.
 
-Some times you might just get lucky and find your self in the present moment, a place where time doesn't exist.git ad
+Some times you might just get lucky and find your self in the present moment, a place where time doesn't exist.
