@@ -9,7 +9,7 @@ images:
     title: Daharvi District, Mumbai, India
   - image: ../../images/life/ant.jpg
     title: Main Train Station, Hamburg, Germany
-  - image: ../../images/life/varanassi.jpg
+  - image: ../../images/life/harmonica.png
     title: Laos
   - image: ../../images/life/mumbai.jpg
     title: Mumbai, India
