@@ -1,7 +1,7 @@
 ---
 templateKey: collection
 title: 14er
-image: ../../images/14ers/north-maroon.jpg
+image: ../../images/14ers/uncompagre.jpg
 images:
   - image: ../../images/14ers/north-maroon.jpg
     title: North Maroon Peak, Colorado

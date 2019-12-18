@@ -8,14 +8,13 @@ import "./style.css"
 export default ({ data }) => {
   const collection = data.markdownRemark.frontmatter
   const images = data.markdownRemark.frontmatter.images
-  console.log("data: ", data)
   return (
     <Layout>
-      <AniLink fade to="/photo/" className="mt-3 mb-3">
+      <AniLink fade to="/photography/" className="mt-3 mb-3">
         <p>Back to Albums</p>
       </AniLink>
-      <h2>{collection.title}</h2>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}}/>
+      <h2 style={{color:`#e9dbbd`}}>{collection.title}</h2>
+        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html}} style={{color:`#d9d9d9`}}/>
       <LightBox images={images} name={collection.title}/>
     </Layout>
   )

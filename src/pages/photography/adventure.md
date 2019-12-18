@@ -4,37 +4,37 @@ title: Adventure
 image: ../../images/adventure/sno.jpg
 images:
   - image: ../../images/adventure/decent.JPG
-    title: Crestone Needle Descent, Colorado
+    title: Crestone Needle, Colorado
   - image: ../../images/adventure/connor.jpg
-    title: Green Belt Hiking, Austin, Texas
+    title: Austin, Texas
   - image: ../../images/adventure/deb.jpg
-    title: Crestone Peak Ascent, Colorado
+    title: Crestone Peak, Colorado
   - image: ../../images/adventure/jack.jpg
-    title: Democrat Peak Summit, Colorado
+    title: Democrat Peak, Colorado
   - image: ../../images/adventure/mary.jpg
-    title: Quandary Peak Descent, Colorado
+    title: Quandary Peak, Colorado
   - image: ../../images/adventure/nick.jpg
-    title: Backcountry Skiing, Loveland Pass, Colorado
+    title: Loveland Pass, Colorado
   - image: ../../images/adventure/sno.jpg
-    title: Maroon Peak Ascent, Colorado
+    title: Maroon Peak, Colorado
   - image: ../../images/adventure/noelle.jpg
-    title: North Maroon Peak Descent, Colorado
+    title: North Maroon Peak, Colorado
   - image: ../../images/adventure/sun.jpg
-    title: El Diente Peak Summit, Colorado
+    title: El Diente Peak, Colorado
   - image: ../../images/adventure/sunlight.jpg
-    title: Sunlight Peak Summit, Colorado
+    title: Sunlight Peak, Colorado
   - image: ../../images/adventure/carlos.JPG
-    title: Loveland Pass Snowboarding, Colorado
+    title: Loveland Pass, Colorado
   - image: ../../images/adventure/iceland.jpg
-    title: Iceland Peak Bagging, Iceland
+    title: Somewhere in Iceland
   - image: ../../images/adventure/smoke.JPG
-    title: Wilson Peak Ascent, Colorado
+    title: Wilson Peak, Colorado
   - image: ../../images/adventure/scooter.JPG
-    title: Ko Lanta Scootering, Thailand
+    title: Ko Lanta, Thailand
   - image: ../../images/adventure/ascent.JPG
-    title: Crestone Needle Ascent, Colorado
+    title: Crestone Needle, Colorado
   - image: ../../images/adventure/pointing.JPG
-    title: Budapest Exploring, Hungary
+    title: Budapest, Hungary
 ---
 ad·​ven·​ture | \ əd-ˈven-chər
 

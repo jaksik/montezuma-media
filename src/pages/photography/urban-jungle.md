@@ -22,19 +22,19 @@ images:
   - image: ../../images/urban-jungle/gadansk.jpg
     title: Gadansk, Poland
   - image: ../../images/urban-jungle/scraper.jpg
-    title: WWII Memorial, Melbourne, Australia
+    title: Dubai, UAE
   - image: ../../images/urban-jungle/canabis.jpg
-    title: Yarro River, Melbourne, Australia
+    title: Denver, Colorado
   - image: ../../images/urban-jungle/melbourne-harbor.jpg
-    title: Melbourne Harbor, Melbourne, Australia
+    title: Melbourne, Australia
   - image: ../../images/urban-jungle/antwerp.jpg
-    title: Cairnes, Australia
+    title: Antwerp, Belgium
   - image: ../../images/urban-jungle/hamburg.jpg
-    title: Cairnes, Australia
+    title: Hamburg, Germany
   - image: ../../images/urban-jungle/dubai-beach.jpg
-    title: Cairnes, Australia
+    title: Dubai, UAE
   - image: ../../images/urban-jungle/ping-pong.jpg
-    title: Cairnes, Australia
+    title: Berlin, Germany
 ---    
 
 ur·​ban jun·​gle | \ ˈər-bən jəŋ-gəl

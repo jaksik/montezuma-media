@@ -8,13 +8,13 @@ images:
   - image: ../../images/life/daharti.jpg
     title: Daharvi District, Mumbai, India
   - image: ../../images/life/ant.jpg
-    title: Main Train Station, Hamburg, Germany
+    title: Cape Tribulation, Australia
   - image: ../../images/life/harmonica.png
-    title: Laos
+    title: Mount of the Holy Cross, Colorado
   - image: ../../images/life/mumbai.jpg
     title: Mumbai, India
   - image: ../../images/life/taj.jpg
-    title: Taj Mahal, Agra, India
+    title: Agra, India
   - image: ../../images/life/tokyo.jpg
     title: Tokyo, Japan
   - image: ../../images/life/spain.jpg
@@ -22,19 +22,19 @@ images:
   - image: ../../images/life/amsterdam.jpg
     title: Amsterdam, Netherlands
   - image: ../../images/life/grant.jpg
-    title: Straubing, Germany
+    title: Budapest, Hungary
   - image: ../../images/life/train.jpg
     title: Warsaw, Poland
   - image: ../../images/life/brussels.jpg
-    title: Berlin Wall, Berlin, Germany
+    title: Brussels, Belgium
   - image: ../../images/landing-cover/deli.jpg
     title: Old Delhi, Delhi, India
   - image: ../../images/life/people.jpg
-    title: Queensland, Australia
+    title: Hamburg, Germany
   - image: ../../images/life/bratislava.jpg
     title: Bratislava, Slovakia
-  - image: ../../images/life/taj.jpg
-    title: Taj Mahal, Agra, India
+  - image: ../../images/landing-cover/lithuania.jpg
+    title: Vilnius, Lithuania
 ---
 
 li·fe​ | \ ˈlīf

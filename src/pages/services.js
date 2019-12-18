@@ -78,7 +78,7 @@ const ServicesPage = ({ data }) => {
       </Row>
       
       <Row className="justify-content-center">
-        <AniLink fade to="/contact/">
+        <AniLink fade to="/contact/" style={{textDecoration:`none`}}>
           <button className="contact-button">Contact</button>
         </AniLink>
       </Row>

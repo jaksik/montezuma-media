@@ -3,13 +3,12 @@ import { graphql } from "gatsby"
 import { Row, Col } from "reactstrap"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Img from "gatsby-image"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import "./gallery.css"
-import "./index.css"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import "../gallery.css"
+import "../index.css"
 
 const GalleryPage = ({ data }) => { 
-  console.log("data: ", data)
   return (
     <Layout>
       <SEO title="Home" />

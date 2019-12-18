@@ -1,7 +1,7 @@
 ---
 templateKey: collection
 title: Nature
-image: ../../images/nature/sand.jpg
+image: ../../images/nature/tree.jpg
 images:
   - image: ../../images/nature/mini.jpg
     title: Guanella Pass, Colorado

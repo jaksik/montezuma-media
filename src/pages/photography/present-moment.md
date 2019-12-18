@@ -4,21 +4,21 @@ title: Present Moment
 image: ../../images/present-moment/latvia.jpg
 images:
   - image: ../../images/present-moment/latvia.jpg
-    title: Abandoned Building, Latvia
+    title: Somewhere in Latvia
   - image: ../../images/present-moment/antwerp.jpg
-    title: Hotel, Antwerp, Belgium
+    title: Antwerp, Belgium
   - image: ../../images/present-moment/australia.jpg
-    title: Abandoned Resort, Cape Tribulation, Australia
+    title: Cape Tribulation, Australia
   - image: ../../images/present-moment/dunes.jpg
     title: Great Sand Dunes, Colorado
   - image: ../../images/present-moment/farm.jpg
     title: 4,000 Islands, Laos
   - image: ../../images/present-moment/field.jpg
-    title: Farm Field, Czech Republic
+    title: Somewhere in Czech Republic
   - image: ../../images/present-moment/iceland.jpg
     title: Somewhere In Iceland
   - image: ../../images/present-moment/indonesia.jpg
-    title: Gili, Indonesia
+    title: Gili Trawangan, Indonesia
   - image: ../../images/present-moment/laos.jpg
     title: 4,000 Islands, Laos
   - image: ../../images/present-moment/locks.jpg
@@ -26,15 +26,15 @@ images:
   - image: ../../images/present-moment/path.jpg
     title: Frisco, Colorado
   - image: ../../images/present-moment/stop.jpg
-    title: Rest Stop, Colorado
+    title: Somewhere in Colorado
   - image: ../../images/present-moment/thailand.jpg
     title: Ko Phi Phi, Thailand
   - image: ../../images/present-moment/town.jpg
-    title: Somewhere in Outback Australia
+    title: Somewhere in Australia
   - image: ../../images/present-moment/utah.jpg
     title: Moab, Utah
   - image: ../../images/present-moment/winch.jpg
-    title: Coober Pedi, Australia
+    title: Coober Pedy, Australia
 ---    
 
 pres·​ent mom·ent | \ ˈpre-zᵊnt mō-məntˈ \
