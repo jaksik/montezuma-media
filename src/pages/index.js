@@ -7,10 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css"
 
 const IndexPage = ({ data }) => {
-  console.log("data: ", data)
 
   return (
   <div style={{position:`fixed`, width:`100%`, height:`100vh`, overflow:`hidden`, background:`black`}}>
+    <SEO title="Home" keywords={[`summit`, `county`, `colorado`, `adventure`, `photography`]}/> 
     <Carousel 
       images={data.allFile.edges}
       className="landing-carousel"
@@ -20,7 +20,6 @@ const IndexPage = ({ data }) => {
 
     </div>
     <Layout>
-      <SEO title="Home" /> 
     </Layout>
   </div>
 )}

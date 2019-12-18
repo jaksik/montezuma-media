@@ -3,13 +3,14 @@ import { graphql } from "gatsby"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Layout from "../components/layout"
 import LightBox from "../components/lightbox"
-import "./style.css"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const collection = data.markdownRemark.frontmatter
   const images = data.markdownRemark.frontmatter.images
   return (
     <Layout>
+      <SEO title={collection.title} keywords={[`adventure`, `photography`, collection.title, `album`]}/> 
       <AniLink fade to="/photography/" className="mt-3 mb-3">
         <p>Back to Albums</p>
       </AniLink>

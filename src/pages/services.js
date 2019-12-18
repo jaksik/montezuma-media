@@ -8,9 +8,9 @@ import Img from "gatsby-image"
 import "./index.css"
 
 const ServicesPage = ({ data }) => {
-  console.log("data ata data: ", data)
   return (
   <div style={{width:`100%`}}>
+    <SEO title="Services" keywords={[`summit`, `county`, `colorado`, `adventure`, `photography`, `services`]}/> 
     <Layout>
       <h2 className="pl-3">Our Services</h2>
       <Row className="no-gutters service-container">

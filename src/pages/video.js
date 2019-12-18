@@ -9,7 +9,7 @@ const VideoPage = ({ data }) => {
 
   return (
     <Layout>
-        <SEO title="Home" /> 
+        <SEO title="Video" /> 
         <h2 className="text-center">Video Production Portfolio</h2>
         <h3 className="text-center mt-5">Check back soon for our videos!</h3>
     </Layout>

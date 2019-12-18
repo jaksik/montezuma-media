@@ -8,6 +8,7 @@ import "./index.css"
 
 const AboutPage = ({ data }) => (
   <Layout>
+    <SEO title="About" keywords={[`summit`, `county`, `colorado`, `adventure`, `photography`]}/> 
     <Row className="no-gutters align-items-center pl-lg-5 pl-xl-5" style={{minHeight:`100vh`}}>
       <Col xs="12" md="7" xl="8">
         <div className="pt-xl-4">

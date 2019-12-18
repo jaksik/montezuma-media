@@ -11,7 +11,7 @@ import "../index.css"
 const GalleryPage = ({ data }) => { 
   return (
     <Layout>
-      <SEO title="Home" />
+    <SEO title="Photography" keywords={[`summit`, `county`, `colorado`, `photography`, `portfolio`, `albums`]}/> 
       <h2 style={{textAlign:`center`}} className="primary-color mb-5">Photography Portfolio</h2>
         <Row className="no-gutters">
         {data.allMarkdownRemark.edges.map((edge, index) => {

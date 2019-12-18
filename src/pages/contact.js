@@ -8,7 +8,7 @@ import "./index.css"
 const ContactPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Contact" />
       <Img fluid={data.backgroundImage.childImageSharp.fluid} style={{maxHeight:`300px`}} className="ml-2"/>
       <h2 className="primary-color text-center mt-5">Send Us a Message</h2>
 
