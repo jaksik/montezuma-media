@@ -10,7 +10,7 @@ import "./index.css"
 const ServicesPage = ({ data }) => {
   return (
   <div style={{width:`100%`}}>
-    <SEO title="Services" keywords={[`summit`, `county`, `colorado`, `adventure`, `photography`, `services`]}/> 
+    <SEO title="Services" keywords={[`montezuma`, `media`, `services`]}/> 
     <Layout>
       <h2 className="pl-3">Our Services</h2>
       <Row className="no-gutters service-container">
