@@ -10,7 +10,7 @@ const ContactPage = ({ data }) => {
     <Layout>
       <SEO title="Contact" keywords={[`contact`, `montezuma`, `media`]}/>
       <Img fluid={data.backgroundImage.childImageSharp.fluid} style={{maxHeight:`300px`}} className="ml-2"/>
-      <h2 className="primary-color text-center mt-5">Send Us a Message</h2>
+      <h2 className="primary-color text-center mt-5">Send Liam a Message</h2>
 
       <form 
         name="contact"
@@ -22,7 +22,6 @@ const ContactPage = ({ data }) => {
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <input style={{display: `none`}} type="text" />
-        <strong className="mb-3">Tell us about your next adventure, or how you would like to bring inspiration to your space.</strong>
         <input className="mb-3 mt-3" placeholder=" Name*"/>
         <input className="mb-3" placeholder=" Email*"/>
         <input className="mb-3" placeholder=" Phone"/>

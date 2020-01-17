@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Montezuma Media`,
-    description: "An adventure photography and video production agency based in Silverthorne, Colorado.",
+    title: `Liam Novak`,
+    description: "Adventure photography by Liam Novak.",
     author: `@jaksik`,
   },
   plugins: [
@@ -27,19 +27,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `montezuma-media`,
-        short_name: `montezuma`,
+        name: `Liam-Novak-Photography`,
+        short_name: `liamnovak`,
         start_url: `/`,
-        background_color: `#e9dbbd`,
+        background_color: `#181510`,
         theme_color: `#e9dbbd;`,
         display: `minimal-ui`,
-        icon: `src/images/app.png`, // This path is relative to the root of the site.
+        icon: `src/images/app.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    
     `gatsby-plugin-offline`,
-    
   ],
 }

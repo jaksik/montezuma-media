@@ -21,9 +21,6 @@ function Layout ({ children }) {
           <AniLink fade to="/photography/" className="nav-item">
             Photo
           </AniLink>
-          <AniLink fade to="/video/" className="nav-item">
-              Video
-            </AniLink>
           <AniLink fade to="/services/" className="nav-item">
             Services
           </AniLink>
@@ -46,23 +43,20 @@ function Layout ({ children }) {
           </span>
           <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand mobile-brand">
             <img src={logo} style={{margin:`0 auto`}} className="nav-logo"/>
-            <h3 style={{margin:`0 0 10px`, fontFamily:`monospace`}} className="primary-font site-title">Montezuma Media</h3>
+            <h3 style={{margin:`0 0 10px`, fontFamily:`monospace`}} className="primary-font site-title">Liam Novak Photography</h3>
           </AniLink>
          </Row>
 
           <div className="desktop-nav-items">
             <AniLink fade to="/" style={{ textDecoration: `none`, margin:`0 auto`}} className="primary-color nav-brand">
               <img src={logo} style={{margin:`0 auto`}} className="nav-logo"/>
-              <h3 style={{margin:`0 0 10px`, fontFamily:`monospace`}} className="primary-font site-title">Montezuma Media</h3>
+              <h3 style={{margin:`0 0 10px`, fontFamily:`monospace`}} className="primary-font site-title">Liam Novak</h3>
             </AniLink>
             <AniLink fade to="/" className="nav-item">
               Home
             </AniLink>
             <AniLink fade to="/photography/" className="nav-item">
               Photo
-            </AniLink>
-            <AniLink fade to="/video/" className="nav-item">
-              Video
             </AniLink>
             <AniLink fade to="/services" className="nav-item">
               Services
@@ -80,8 +74,8 @@ function Layout ({ children }) {
       <main className={`main ` + (open ? `open` : ``)}>
         <div className="main-container pt-xl-5">{children}</div>
         <p style={{margin:`40px 40px 0px`, textAlign:`center`, fontSize:`15px`, color:`#e9dbbd`}}>
-          © 2019, Montezuma Media All Rights Reserved.
-          Website Built by <a href="https://aspenapps.netlify.com">Aspen Apps</a>
+          © 2019, Liam Novak All Rights Reserved.
+          Website built by <a href="https://connorjaksik.dev">Connor Jaksik</a>.
         </p>
       </main>
 
