@@ -10,7 +10,7 @@ const ContactPage = ({ data }) => {
     <Layout>
       <SEO title="Contact" keywords={[`contact`, `montezuma`, `media`]}/>
       <Img fluid={data.backgroundImage.childImageSharp.fluid} style={{maxHeight:`300px`}} className="ml-2"/>
-      <h2 className="primary-color text-center mt-5">Send Liam a Message</h2>
+      <h2 className="primary-color text-center mt-5">Send Connor a Message</h2>
 
       <form 
         name="contact"

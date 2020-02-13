@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Liam Novak`,
-    description: "Adventure photography by Liam Novak.",
+    title: `Connor Jaksik`,
+    description: "Adventure photography by Connor Jaksik.",
     author: `@jaksik`,
   },
   plugins: [

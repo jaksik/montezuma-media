@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
       <Carousel images={data.allFile.edges} className="landing-carousel" />
       <div className="row no-gutters landing-text align-items-center justify-content-center">
         <h2 style={{ alignSelf: `center`, margin: `0 auto` }} className="landing-title">
-          Adventure Photography by <br/>Liam Novak<br /><br />
+          Adventure Photography by <br/>Connor Jaksik<br /><br />
           <Link to="/contact"><Button style={{ background: `rgba(24, 21, 16, 1)`, color:`#e9dbbd`}}>Contact</Button></Link>
         </h2>
       </div>
