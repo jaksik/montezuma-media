@@ -12,7 +12,7 @@ const ServicesPage = ({ data }) => {
   <div style={{width:`100%`}}>
     <SEO title="Services" keywords={[`montezuma`, `media`, `services`]}/> 
     <Layout>
-      <h2 className="pl-3">Our Services</h2>
+      <h2 className="pl-3">Services</h2>
       <Row className="no-gutters service-container">
         <h4 className="w-100">Adventure Photo Shoots</h4><br/>
 
@@ -20,7 +20,7 @@ const ServicesPage = ({ data }) => {
           <strong>Capture Your Next Adventure</strong><br/>
           <p className="page-text"> 
             Are you wanting to capture and share the experience from your next big adventure?
-            Montezuma Media is passionate about capturing and sharing the moments from those once in a lifetime adventures.
+            Liam Novak is passionate about capturing and sharing moments from those once in a lifetime adventures.
             Whether it's on skis or on a belay, we're eager to be by your side capturing that life-changing moment exactly how you felt it.
           </p>
          
